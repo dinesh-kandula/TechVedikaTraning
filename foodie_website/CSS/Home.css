@@ -1,0 +1,201 @@
+/* Home Page Main Styling Starts */
+.main-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    margin-bottom: 80px;
+}
+
+/* Home Page Main Title Decription Styling Starts */
+
+.main-card .title-description-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Inter;
+    width: 50%;
+}
+
+.title-description-card .title{
+    color: #000;
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 145.523%; /* 90.224px */
+}
+
+.title-description-card .title span{
+    color: #39DB4A;
+}
+
+.title-description-card .description{
+    color: #4A4A4A;
+    font-size: 26px;
+    line-height: 170.5%; /* 44.33px */
+}
+
+
+.title-description-card .order-watch-card{
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+}
+
+.title-description-card .order-watch-card .order-now-btn{
+    width: 229px;
+    height: 80px;
+    border-radius: 40px;
+    background: #39DB4A;
+    box-shadow: -2px 22px 38px 0px rgba(142, 255, 154, 0.50);
+    color: #FFF;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 600;
+    border: 0;
+    margin: 0 20px 0 0;
+}
+
+.title-description-card .order-watch-card .watch-video{
+    color: #4D4D4D;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 10px 0 10px;
+}
+
+.title-description-card .order-watch-card .watch-video-icon-card{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 6px 27px 34px 0px rgba(0, 0, 0, 0.10);
+    margin: 0 10px 0 10px;
+}
+
+/* Home Page Main Title Decription Styling Ends */
+
+/* Home Page Main Image Special Items Styling Ends */
+
+.main-image-container{
+    width: 50%;
+}
+
+.main-card .main-image-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-card .main-image-box{
+    width: 500px;
+    height: 500px;
+    background-color: #39DB4A;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.main-card .main-image-container .main-image-card .main-img{
+    position: absolute;
+    z-index: 2;
+    width: 400px;
+    margin: 35px 0 0 0;
+}
+
+.main-image-card .comment-special-item-card{
+    position: absolute;
+    z-index: 3;
+}
+
+.comment-special-item-card .comment-card{
+    position: relative;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 200px;
+    top: 100px;
+}
+
+.comment-card .rectangle-comment{
+    position: absolute;
+    z-index: 1;
+}
+
+.comment-card p{
+    position: absolute;
+    z-index: 2;
+    width: 170px;
+    margin: 0 50px 50px 0;
+    color: #FF6868;
+    font-family: Inter;
+    font-size: 18px;
+}
+
+.comment-special-item-card .special-item-card{
+    display: flex;
+    align-items: center;
+    margin: 420px 0 -120px 0;
+}
+
+.special-item-card .item-card{
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    width: 349px;
+    height: 120px; 
+    background: #FFF;
+    box-shadow: 7px 35px 51px 0px rgba(0, 0, 0, 0.14);
+}
+
+.special-item-card .item-card img{
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+.item-card .item-details-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-card .item-details-card .title{
+    color: #2C2C2C;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 5px 0 15px 0;
+}
+
+.item-card .item-details-card .stars-card{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+
+.item-card .item-details-card .stars-card i{
+    margin: 0 10px 0 0;
+}
+
+.item-card .item-details-card .price{
+    color: #515151;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0 0 0;
+}
+
+.item-card .item-details-card .price span{
+    color: #FF7979;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Home Page Main Image Special Items Styling Ends */
+
+/* Home Page Main Styling Ends */

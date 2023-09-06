@@ -1,0 +1,12 @@
+/* Common Styles Starts */
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg, #FAFAFA 0%, #FCFCFC 100%);
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Common Styles Ends */

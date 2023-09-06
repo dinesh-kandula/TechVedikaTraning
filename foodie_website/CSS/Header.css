@@ -1,0 +1,130 @@
+/* Header Section Styles Starts */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px 0 50px;
+}
+
+/* Website Logo Styling Starts */
+
+.header .website-logo-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.website-logo-card .website-logo-letter{
+    width: 34px;
+    height: 41px;
+    border-radius: 8px;
+    background-color: #39DB4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 0 0;
+}
+
+/* Website Logo Styling Ends */
+
+/* Website Nav Options Styling Starts */
+
+.nav-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+}
+
+.nav-options .nav-home{
+    margin: 0 10px 0 10px;
+}
+
+.nav-options .nav-home h2{
+    color: #39DB4A;
+    font-size: 20px;
+}
+
+.nav-options .nav-others{
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.nav-options .nav-others h2{
+    color: #272727;
+    font-size: 20px;
+    margin: 0 5px 0 0;
+}
+
+.nav-options .nav-others .menu-dropdown-card{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Website Nav Options Styling Ends */
+
+/* Website Search Cart Contact Styling Starts */
+
+.header .search-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.search-cart .search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-cart .cart-icon-count-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-cart .cart-icon-count-card .cart-icon{
+    z-index: 0;
+    position: absolute;
+}
+
+.search-cart .cart-icon-count-card .cart-count{
+    width: 20px;
+    height: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#39DB4A;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600; 
+    z-index: 1;
+    position: absolute;
+    margin: 0 0 35px 30px;
+}
+
+.search-cart .contact-us-card{
+    width: 179px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #39DB4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-cart .contact-us-card h2{
+    color: #FFF;
+    font-family: Poppins; 
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+/* Website Search Cart Contact Styling Ends */
+
+/* Header Section Styles Ends */
