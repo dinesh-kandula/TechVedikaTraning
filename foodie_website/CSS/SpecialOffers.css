@@ -1,0 +1,134 @@
+/* Special Dishes Styling Star */
+.special-dishes{
+    font-family: Inter;
+    padding: 50px;
+}
+
+.special-dishes p{
+    color: #FF6868;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+}
+
+.special-dishes .title-navigation-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Inter;
+}
+
+.title-navigation-card h1{
+    color: #000;
+    width: 580px; 
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 131.523%; /* 78.914px */
+}
+
+.title-navigation-card .navigation-card{
+    display: flex;
+    align-items: center;
+}
+
+.navigation-card .arrow-cards{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.navigation-card .left-arrow{
+    background-color: #EFEFEF;
+}
+
+.navigation-card .right-arrow{
+    background-color: #39DB4A;
+}
+
+.special-dishes .special-dishes-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.special-dishes-ul .special-dishes-card{
+    width: 350px;
+    height: 523px; 
+    border-radius: 40px;
+    background-color: #FFF;
+    box-shadow: 2px 9px 42px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Inter;
+    margin: 20px;
+}
+
+.special-dishes-card .favorites-card{
+    width: 87px;
+    height: 75px; 
+    align-self: flex-end;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: #39DB4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.special-dishes-card img{
+    align-self: center;
+}
+
+.special-dishes-card h1{
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 5px 0 5px 20px;
+}
+
+.special-dishes-card p{
+    color: #555;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 5px 0 5px 20px;
+}
+
+.special-dishes-card .price-rating-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter;
+    width: 90%;
+}
+
+.price-rating-card p{
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.price-rating-card p span{
+    color: #FF6868; 
+    font-size: 24px;
+}
+
+.price-rating-card .rating-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+}
+
+.price-rating-card .rating-card p{
+    color: #454545;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Special Dishes Styling Ends */

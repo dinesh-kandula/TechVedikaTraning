@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 50px;
+    padding-right: 90px;
     margin-bottom: 80px;
 }
 
@@ -116,7 +117,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 200px;
+    right: 170px;
     top: 100px;
 }
 

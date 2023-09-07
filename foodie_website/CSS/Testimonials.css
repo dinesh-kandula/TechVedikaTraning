@@ -1,0 +1,173 @@
+/* Testimonials Styling Start */
+.testimonials{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.testimonials .best-cheff-card{
+    min-width: 600px;
+    width: 50%;
+    position: relative;
+
+}
+
+.best-cheff-card .background-card{
+    position: absolute;
+    z-index: 0;
+    width: 492px;
+    height: 362px;
+    border-radius: 140px 140px 41px 41px;
+    background: #53EC62;
+    top: 138px;
+}
+
+.best-cheff-card .cheff-image{
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    bottom: -500px;
+}
+
+.best-cheff-card .comment-card{
+    position: absolute;
+    z-index: 2;
+    top: 370px;
+    left: 260px;
+}
+
+
+.best-cheff-card .comment-card div{
+    position: relative;
+}
+
+.best-cheff-card .comment-card div .rectangle-comment{
+    position: absolute;
+    z-index: 0;
+    transform: rotate(180deg);
+}
+
+.best-cheff-card .comment-card div p{
+    position: relative;
+    z-index: 1;
+    color: #202020;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    top: 100px;
+    left: 120px;
+}
+
+.best-cheff-card .tasty{
+    position: absolute;
+    z-index: 4;
+    transform: rotate(-17.029deg);
+    font-size: 44px; 
+    top: 120px;
+}
+
+.best-cheff-card .pizza{
+    position: absolute;
+    z-index: 5;
+    transform: rotate(80.994deg);
+    font-size: 44px; 
+    top: 170px;
+    left: 470px;
+}
+
+.testimonials-customer{
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+}
+
+.testimonials-customer .title{
+    color: #FF6868;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+}
+
+.testimonials-customer .customer-heading{
+    color: #000;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 131.023%; /* 78.614px */
+}
+
+.testimonials-customer .description{
+    color: #555;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 159%; /* 41.34px */
+}
+
+.testimonials-customer .customer-feedback{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.customer-feedback .customer-profiles{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 40px 0 0;
+}
+
+.customer-feedback .customer-profiles .image{
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.customer-feedback .customer-profiles .image-1{
+    position: absolute;
+    z-index: 0;
+}
+
+.customer-feedback .customer-profiles .image-2{
+    position: absolute;
+    z-index: 1;
+    left: 60px;
+}
+
+.customer-feedback .customer-profiles .image-3{
+    position: absolute;
+    z-index: 2;
+    left: 120px;
+}
+
+.customer-feedback .customer-rating h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.customer-feedback .customer-rating .rating-review-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customer-rating .rating-review-card .rating-count{
+    color: #454545;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 5px 0 10px;
+}
+
+.customer-rating .rating-review-card .review-count{
+    color: #807E7E;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 0 5px;
+}
+
+
+
+/* Testimonials Styling Ends */
