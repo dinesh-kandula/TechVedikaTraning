@@ -7,11 +7,38 @@
     margin-bottom: 200px;
 }
 
+@media (max-width: 576px) {
+    .testimonials{
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+.best-cheff-card-container{
+    width: 600px;
+}
+
 .testimonials .best-cheff-card{
     min-width: 600px;
     width: 50%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+@media (max-width: 576px){
+    .best-cheff-card-container{
+        width: 360px;
+        height: 400px;
+    }
+
+    .testimonials .best-cheff-card{
+        min-width: 400px;
+        width: 100%;
+    }
 }
 
 .best-cheff-card .background-card{
@@ -31,13 +58,23 @@
     bottom: -500px;
 }
 
+@media (max-width: 576px){
+    .best-cheff-card .background-card{
+        width: 300px;
+        height: 200px;
+    }    
+    .best-cheff-card .cheff-image{
+        width: 280px;
+        bottom: -338px;
+    }
+}
+
 .best-cheff-card .comment-card{
     position: absolute;
     z-index: 2;
     top: 370px;
     left: 260px;
 }
-
 
 .best-cheff-card .comment-card div{
     position: relative;
@@ -60,12 +97,29 @@
     left: 120px;
 }
 
+@media (max-width: 576px){
+    .best-cheff-card .comment-card{
+        top: 265px;
+        left: 160px;
+    }
+    .best-cheff-card .comment-card div .rectangle-comment{
+        width: 220px;
+    }
+
+    .best-cheff-card .comment-card div p{
+        top: 60px;
+       left: 60px;
+       font-size: 16px;
+    }
+}
+
 .best-cheff-card .tasty{
     position: absolute;
     z-index: 4;
     transform: rotate(-17.029deg);
     font-size: 44px; 
     top: 120px;
+    left: 50px;
 }
 
 .best-cheff-card .pizza{
@@ -74,8 +128,23 @@
     transform: rotate(80.994deg);
     font-size: 44px; 
     top: 170px;
-    left: 470px;
+    right: 30px;
 }
+
+@media (max-width: 576px){
+    .best-cheff-card .tasty{
+        font-size: 28px;
+        left: 60px;
+        top: 150px;
+    }
+
+    .best-cheff-card .pizza{
+        font-size: 28px;
+        top: 180px;
+        right: 40px;
+    }
+}
+
 
 .testimonials-customer{
     display: flex;
@@ -102,6 +171,25 @@
     font-size: 26px;
     font-weight: 500;
     line-height: 159%; /* 41.34px */
+}
+
+@media (max-width: 576px){
+    .testimonials-customer{
+        align-items: center;
+    }
+    .testimonials-customer .title{
+        font-size: 18px;
+    }
+    .testimonials-customer .customer-heading{
+        font-size: 28px;
+        line-height: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    .testimonials-customer .description{
+        font-size: 16px;
+        margin: 10px 0 10px 0;
+    }
 }
 
 .testimonials-customer .customer-feedback{
@@ -169,5 +257,31 @@
 }
 
 
+@media (max-width: 576px){
+    .testimonials-customer .customer-feedback{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .customer-feedback .customer-profiles{
+        height: 100px;
+    }
+
+    .customer-feedback .customer-rating h1{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .customer-rating .rating-review-card .rating-count{
+        font-size: 18px;
+    }
+
+    .customer-rating .rating-review-card i{
+        font-size: 18px;
+    }
+
+    .customer-rating .rating-review-card .review-count{
+        font-size: 18px;
+    }
+}
 
 /* Testimonials Styling Ends */

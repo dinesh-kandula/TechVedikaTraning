@@ -49,6 +49,23 @@
     background-color: #39DB4A;
 }
 
+@media (max-width: 576px){
+    .special-dishes{
+        padding: 20px;
+    }
+    .special-dishes p{
+        font-size: 18px;
+    }    
+    .special-dishes .title-navigation-card h1{
+        font-size: 24px;
+    }
+
+    .navigation-card .arrow-cards{
+        width: 40px;
+        height: 40px;
+    }
+}
+
 .special-dishes .special-dishes-ul{
     display: flex;
     justify-content: center;
@@ -85,11 +102,17 @@
     align-self: center;
 }
 
+.special-dishes-card .head-para{
+    display: flex;
+    flex-direction: column;
+}
+
 .special-dishes-card h1{
     color: #000;
     font-size: 30px;
     font-weight: 600;
     margin: 5px 0 5px 20px;
+    text-align: center;
 }
 
 .special-dishes-card p{
@@ -97,6 +120,46 @@
     font-size: 22px;
     font-weight: 600;
     margin: 5px 0 5px 20px;
+}
+
+
+@media (max-width: 576px){
+    .special-dishes-ul .special-dishes-card{
+        /* width: 360px; */
+        height: 120px;
+        border-radius: 16px; 
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .special-dishes-ul .special-dishes-card .favorites-card{
+        width: 160px;
+        height: 40px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        order: 2;
+        align-self: flex-start;
+    }
+
+    .special-dishes-ul .special-dishes-card .favorites-card i{
+        font-size: 18px;
+    }
+
+    .special-dishes-ul .special-dishes-card img{
+        width: 90px;
+    }
+
+    .special-dishes-card h1{
+        font-size: 16px;
+        margin: 5px 0 5px 5px;
+        text-align: left;
+    }
+
+    .special-dishes-card p{
+        font-size: 12px;
+        margin-left: 5px;
+        text-align: left;
+    }
 }
 
 .special-dishes-card .price-rating-card{
@@ -130,5 +193,30 @@
     font-size: 24px;
     font-weight: 600;
 }
+
+@media (max-width: 576px){
+    .special-dishes-card .price-rating-card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .price-rating-card p{
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .price-rating-card p span{
+        font-size: 14px;
+    }
+
+    .price-rating-card .rating-card i{
+        font-size: 16px;
+    }
+
+    .price-rating-card .rating-card p{
+        font-size: 16px;
+    }
+
+}
+
+
 
 /* Special Dishes Styling Ends */

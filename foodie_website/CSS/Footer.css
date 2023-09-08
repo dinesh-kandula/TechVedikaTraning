@@ -1,5 +1,14 @@
+.footer{ /* Header Var Colors */
+    --green: #39DB4A;
+    --black: #272727;
+    --white: #FFF;
+    --lightGreen: lightgreen;
+    --font: Inter;
+}
+
 /* Footer Style Starts */
 .footer{
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -27,6 +36,22 @@
     line-height: 150.523%; /* 36.125px */
 }
 
+
+@media (max-width: 576px){
+    .footer .follow-us-section{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .follow-us-section .logo-about{
+        width: 100%;
+    }
+
+    .follow-us-section .logo-about .about{
+        font-size: 18px;
+    }
+}
+
 .follow-us-section .useful-link{
     display: flex;
     flex-direction: column;
@@ -47,6 +72,18 @@
     font-family: Inter;
     font-size: 24px;
     text-decoration: none;
+}
+
+@media (max-width: 576px){
+    .useful-link p{
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .useful-link li a{
+        font-size: 16px;
+    }
 }
 
 .footer .social-media-copyright{
@@ -87,5 +124,34 @@
     color: #555;
     font-family: Inter;
     font-size: 22px;
+}
+
+@media (max-width: 576px){
+    .footer .social-media-copyright{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media .social-icon-card{
+        width: 50px;
+        height: 50px; 
+    }
+
+    .social-media .social-icon-card img{
+        width: 30px;
+        height: 30px;   
+    }
+
+
+
+    .social-media-copyright .copy-right{
+        margin: 0;
+    }
+
+    .social-media-copyright .copy-right p{
+        font-size: 16px;
+    }
+
+
 }
 /* Footer Style Ends */

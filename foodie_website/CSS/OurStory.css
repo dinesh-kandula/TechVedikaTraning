@@ -41,7 +41,45 @@
     font-size: 26px;
     font-weight: 600;
     border: 0;
+    cursor: pointer;
 }
+
+.our-story-card .explore-btn:hover{
+    box-shadow: 1px 1px 10px 2px #39DB4A;
+    border: 0.1px solid white;
+}
+
+@media (max-width: 576px){
+    .our-story{
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .our-story-card{
+        width: 100%;
+    }
+
+    .our-story-card .title{
+        font-size: 18px;
+    }
+
+    .our-story-card .story-heading{
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .our-story-card .story-description{
+        font-size: 18px;
+    }
+
+    .our-story-card .explore-btn{
+        width: 100%;
+        height: 50px;
+        font-size: 24px;
+    }
+}
+
 
 .our-story .our-services-ul{
     display: flex;
@@ -78,6 +116,31 @@
     font-weight: 600;
 }
 
+@media (max-width: 576px){
+    .our-story .our-services-ul{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .our-services-ul .our-services-li{
+        width: 145px;
+        height: 200px;
+        margin: 6px;
+    }
+
+    .our-services-li img{
+        width: 45px;
+    }
+
+    .our-services-li .li-title{
+        font-size: 18px;
+        margin: 5px 0 5px 0;
+    }
+    .our-services-li .li-para{
+        font-size: 14px;
+        padding: 5px;
+    }
+}
 
 
 /* Our Story Styling Ends */

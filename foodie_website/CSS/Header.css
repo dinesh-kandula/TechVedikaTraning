@@ -1,10 +1,43 @@
+/* Common Styling Start */
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Common Styling Start */
+
 /* Header Section Styles Starts */
+
+.header{ /* Header Var Colors */
+    --green: #39DB4A;
+    --black: #272727;
+    --white: #FFF;
+    --lightGreen: lightgreen;
+    --font: Inter;
+}
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px 0 50px;
+    margin: 0px 20px 0 20px;
+    padding: 0 40px 0 30px;
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    background-color: var(--white);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px var(--lightGreen) inset;
+}
+
+@media (max-width: 576px){
+    .header{
+        padding: 20px;
+        margin: 10px;
+    }
 }
 
 /* Website Logo Styling Starts */
@@ -13,13 +46,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .website-logo-card .website-logo-letter{
     width: 34px;
     height: 41px;
     border-radius: 8px;
-    background-color: #39DB4A;
+    background-color: var(--green);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,10 +73,11 @@
 
 .nav-options .nav-home{
     margin: 0 10px 0 10px;
+    cursor: pointer;
 }
 
 .nav-options .nav-home h2{
-    color: #39DB4A;
+    color: var(--green);
     font-size: 20px;
 }
 
@@ -50,10 +85,11 @@
     display: flex;
     align-items: center;
     margin: 0 10px 0 10px;
+    cursor: pointer;
 }
 
 .nav-options .nav-others h2{
-    color: #272727;
+    color: var(--black);
     font-size: 20px;
     margin: 0 5px 0 0;
 }
@@ -61,6 +97,12 @@
 .nav-options .nav-others .menu-dropdown-card{
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 576px){
+    .nav-options{
+        display: none;
+    }
 }
 
 /* Website Nav Options Styling Ends */
@@ -72,6 +114,14 @@
     align-items: center;
     justify-content: space-between;
     width: 350px;
+    padding-right: 0px;
+}
+
+@media (max-width: 576px){
+    .header .search-cart{
+        justify-content: space-around;
+        width: 60%;
+    }
 }
 
 .search-cart .search-icon{
@@ -98,25 +148,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#39DB4A;
+    background-color: var(--green);
     border-radius: 10px;
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 600; 
+    color: var(--white);
     z-index: 1;
     position: absolute;
     margin: 0 0 35px 30px;
 }
 
+.search-cart .cart-icon-count-card .cart-count p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 2px 2px grey;
+}
+
+
 .search-cart .contact-us-card{
     width: 179px;
     height: 60px;
     border-radius: 40px;
-    background-color: #39DB4A;
+    background-color: var(--green);
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
+
+.search-cart .contact-us-card:hover{
+    border: 1px solid transparent;
+    border-left: 0;
+}
+
 
 .search-cart .contact-us-card h2{
     color: #FFF;
@@ -125,6 +188,209 @@
     margin-left: 8px;
 }
 
+@media (max-width: 576px){
+    .search-cart .contact-us-card{
+        display: none;
+    }  
+}
+
+.search-cart .menu-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-card .menu-icon:hover{
+    font-size: 36px;
+    color: var(--green);
+}
+
+@media (min-width: 576px) {
+    .search-cart .menu-card{
+        display: none;
+    }
+}
+
 /* Website Search Cart Contact Styling Ends */
+
+/* Header Nav Options for Medium Screen Styling Start */
+
+.nav-options-md{ /* Header Var Colors */
+    --green: #39DB4A;
+    --black: #272727;
+    --white: #FFF;
+    --lightGreen: lightgreen;
+    --font: Inter;
+}
+
+.nav-options-md{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    position: fixed;
+    top: 90px;
+    margin: 0 0 16px 0;
+    width: 100vw;
+}
+
+.hide-nav-option-md{
+    display: none;
+}
+
+.nav-options-md .nav-home-md{
+    margin: 0 10px 0 10px;
+}
+
+.nav-options-md .nav-home-md h2{
+    color: var(--green);
+    font-size: 20px;
+}
+
+.nav-options-md .nav-others-md{
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.nav-options-md .nav-others-md h2{
+    color: var(--black);
+    font-size: 20px;
+    margin: 0 5px 0 0;
+}
+
+.nav-options-md .nav-others-md .menu-dropdown-card-md{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 576px){
+    .nav-options-md{
+        display: none;
+    }
+}
+
+/* Header Nav Options for Medium Screen Styling Ends */
+
+
+/* Header Menu Options & Services Options Styling Starts */
+
+.menu-options-card{
+    border-radius: 10px;
+    position: fixed;
+    z-index: 100;
+    left: 430px;
+    top: 60px;
+    box-shadow: 0px 0px 10px 2px var(--lightGreen) inset;
+}
+
+.services-options-card{
+    border-radius: 10px;
+    position: fixed;
+    z-index: 100;
+    left: 530px;
+    top: 60px;
+    box-shadow: 0px 0px 10px 2px var(--lightGreen) inset;
+}
+
+@media (max-width: 576px){
+    .menu-options-card{
+        left: 1px;
+        top: 115px;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .services-options-card{
+        left: 2px;
+        top: 115px;
+    }
+}
+
+
+.menu-options-card .menu-options{
+    height: 200px;
+    width: 600px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 50px;
+   
+}
+
+
+.services-options-card .services-options{
+    height: 160px;
+    width: 400px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 50px;
+   
+}
+
+@media (max-width: 576px){
+    .menu-options-card .menu-options{
+        height: 280px;
+        width: 350px;
+    }
+
+    .services-options-card .services-options{
+        height: 160px;
+        width: 350px;
+    }
+}
+
+.menu-options li{
+    height: 28px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.services-options li{
+    height: 28px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.menu-options li p{
+    font-family: Inter;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.services-options li p{
+    font-family: Inter;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.menu-options li p:hover{
+    font-size: 22px;
+}
+
+.services-options li p:hover{
+    font-size: 22px;
+}
+
+
+.hide-menu-options{
+    display: none;
+}
+
+/* Header Menu Options & Services Options Styling Starts */
 
 /* Header Section Styles Ends */

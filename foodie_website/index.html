@@ -7,7 +7,7 @@
       src="https://kit.fontawesome.com/2fee6ffcdf.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./CSS/Common..css" />
+    <link rel="stylesheet" href="./CSS/Common.css" />
     <link rel="stylesheet" href="./CSS/Header.css" />
     <link rel="stylesheet" href="./CSS/Home.css" />
     <link rel="stylesheet" href="./CSS/PopularCatagories.css" />
@@ -42,16 +42,18 @@
                     <li class="nav-home">
                         <h2>Home</h2>
                     </li>
-                    <li class="nav-others">
+                    <li class="nav-others" onclick="onClickHeaderMenu()">
                         <h2>Menu</h2>
                         <div class="menu-dropdown-card">
-                            <i class="fa-solid fa-chevron-down fa-xl" style="color: #39db4a;"></i>
+                            <i id="menuDownArrow" class="fa-solid fa-chevron-down fa-xl" style="color: #39db4a;"></i>
+                            <i id="menuUpArrow" class="fa-solid fa-chevron-up fa-xl hide-menu-options" style="color: #39db4a;"></i>
                         </div>
                     </li>
-                    <li class="nav-others">
+                    <li class="nav-others" onclick="onClickServices()">
                         <h2>Services</h2>
                         <div class="menu-dropdown-card">
-                            <i class="fa-solid fa-chevron-down fa-xl" style="color: #39db4a;"></i>
+                            <i id="servicesDownArrow" class="fa-solid fa-chevron-down fa-xl" style="color: #39db4a;"></i>
+                            <i id="servicesUpArrow" class="fa-solid fa-chevron-up fa-xl hide-menu-options" style="color: #39db4a;"></i>
                         </div>
                     </li>
                     <li class="nav-others">
@@ -67,18 +69,48 @@
                     </div>
                     <div class="cart-icon-count-card">
                         <div class="cart-icon">
-                            <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i>
+                            <i class="fa-solid fa-cart-shopping fa-2xl cart-shopping-icon" style="color: #000000;"></i>
                         </div>
-                        <div class="cart-count">3</div>
+                        <div class="cart-count">
+                            <p>3</p>
+                        </div>
                     </div>
                     <div class="contact-us-card">
                         <img src="./Icons/phoneCall.svg" alt="phone Call" class="phone-icon" />
                         <h2>Contact</h2>
                     </div>
+                    <div class="menu-card" onclick="onDisplayMenu()">
+                        <i class="fa-solid fa-ellipsis-vertical fa-2xl menu-icon" style="color: #000000;"></i>
+                    </div>
 
                 </div>
                 <!-- Header Search Cart Contact Ends -->
             </header>
+            <!-- Header Nav Options for Medium Screen Starts -->
+            <ul class="nav-options-md hide-nav-option-md" id="navOptionsMd">
+                <li class="nav-home-md">
+                    <h2>Home</h2>
+                </li>
+                <li class="nav-others-md" onclick="onClickHeaderMenu()">
+                    <h2>Menu</h2>
+                    <div class="menu-dropdown-card-md">
+                        <i id="menuDownArrowMd" class="fa-solid fa-chevron-down fa-xl" style="color: #39db4a;"></i>
+                        <i id="menuUpArrowMd" class="fa-solid fa-chevron-up fa-xl hide-menu-options" style="color: #39db4a;"></i>
+                    </div>
+                </li>
+                <li class="nav-others-md" onclick="onClickServices()">
+                    <h2>Services</h2>
+                    <div class="menu-dropdown-card-md">
+                        <i id="servicesDownArrowMd" class="fa-solid fa-chevron-down fa-xl" style="color: #39db4a;"></i>
+                        <i id="servicesUpArrowMd" class="fa-solid fa-chevron-up fa-xl hide-menu-options" style="color: #39db4a;"></i>
+                    </div>
+                </li>
+                <li class="nav-others-md">
+                    <h2>Offers</h2>
+                </li>
+            </ul>
+            <!-- Header Nav Options for Medium Screen Ends -->
+
             <!-- Header Section Ends -->
 
             <!-- Home Page Main Content Start -->
@@ -212,8 +244,10 @@
                             <i class="fa-solid fa-heart fa-xl" style="color: #ffffff;"></i>
                         </div>
                         <img src="https://res.cloudinary.com/dfspkh5oi/image/upload/v1694071729/TechVedika/06%20Sep/Fattoush_salad_rjqhy1.png" alt="salad" />
-                        <h1>Fattoush salad</h1>
-                        <p>Description of the item</p>
+                        <div class="head-para">
+                            <h1>Fattoush salad</h1>
+                            <p>Description of the item</p>
+                        </div>
                         <div class="price-rating-card">
                             <p>
                                 <span>$</span>
@@ -231,8 +265,10 @@
                             <i class="fa-solid fa-heart fa-xl" style="color: #ffffff;"></i>
                         </div>
                         <img src="https://res.cloudinary.com/dfspkh5oi/image/upload/v1694071729/TechVedika/06%20Sep/Vegetable_salad_db9nmf.png" alt="salad" />
-                        <h1>Vegetable salad</h1>
-                        <p>Description of the item</p>
+                        <div class="head-para">
+                            <h1>Vegetable salad</h1>
+                            <p>Description of the item</p>
+                        </div>    
                         <div class="price-rating-card">
                             <p>
                                 <span>$</span>
@@ -250,8 +286,10 @@
                             <i class="fa-solid fa-heart fa-xl" style="color: #ffffff;"></i>
                         </div>
                         <img src="https://res.cloudinary.com/dfspkh5oi/image/upload/v1694071729/TechVedika/06%20Sep/Egg_salad_eirx77.png" alt="salad" />
-                        <h1>Egg vegi salad</h1>
-                        <p>Description of the item</p>
+                        <div class="head-para">
+                            <h1>Egg vegi salad</h1>
+                            <p>Description of the item</p>
+                        </div>
                         <div class="price-rating-card">
                             <p>
                                 <span>$</span>
@@ -270,17 +308,19 @@
 
             <!-- Testimonials Section Start -->
             <div class="testimonials">
-                <div class="best-cheff-card">
-                    <div class="background-card"></div>
-                    <img class="cheff-image" src="https://res.cloudinary.com/dfspkh5oi/image/upload/v1694073315/TechVedika/06%20Sep/pngwing_2_thoudr.png" alt="Best Cheff" />
-                    <div class="comment-card">
-                        <div>
-                            <img class="rectangle-comment" src="./Icons/RectangleComment.svg" alt="comment box"/>
-                            <p>Our Best Chef 😁</p>
+                <div class="best-cheff-card-container">
+                    <div class="best-cheff-card">
+                        <div class="background-card"></div>
+                        <img class="cheff-image" src="https://res.cloudinary.com/dfspkh5oi/image/upload/v1694073315/TechVedika/06%20Sep/pngwing_2_thoudr.png" alt="Best Cheff" />
+                        <div class="comment-card">
+                            <div>
+                                <img class="rectangle-comment" src="./Icons/RectangleComment.svg" alt="comment box"/>
+                                <p>Our Best Chef 😁</p>
+                            </div>
                         </div>
+                        <p class="tasty">😋</p>
+                        <p class="pizza">🍕</p>
                     </div>
-                    <p class="tasty">😋</p>
-                    <p class="pizza">🍕</p>
                 </div>
                 <div class="testimonials-customer">
                     <p class="title">Testimonials</p>
@@ -304,7 +344,6 @@
                 </div>
             </div>
             <!-- Testimonials Section Ends -->
-
 
             <!-- Our Story Section Starts -->
             <div class="our-story">
@@ -448,5 +487,8 @@
             <!-- Footer Section Ends -->
         </div>
         <!-- Home Page Ends -->
+
+        <!-- JavaScript Links -->
+        <script type="text/JavaScript" src="./JS/Header.js" /></script>
     </body>
 </html>

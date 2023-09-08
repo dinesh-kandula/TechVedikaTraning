@@ -7,6 +7,12 @@
     align-items: center;
 }
 
+@media (max-width: 576px){
+    .popular-catagories{
+        width: 100%;
+    }
+}
+
 .popular-catagories p{
     color: #FF6868;
     font-family: Inter;
@@ -31,6 +37,18 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+@media (max-width:576px){
+    .popular-catagories p{
+        font-size: 16px;
+    }
+
+    .popular-catagories h1{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+}
+
 
 .popular-catagories .all-cards .each-card{
     margin: 8px;
@@ -71,6 +89,33 @@
     font-family: Inter;
     font-size: 22px;
     margin-top: 0;
+}
+
+@media (max-width: 576px){
+
+    .popular-catagories .all-cards .each-card{
+        width: 150px;
+        height: 200px;
+        border-radius: 40px;
+    }
+    
+    .each-card .card-image{
+        width: 100px;
+        height: 100px;
+    }
+
+    .each-card .card-image img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .each-card h1{
+        font-size: 18px;
+    }
+
+    .each-card p{
+        font-size: 12px;
+    }
 }
 
 /* Popular Catagories Styling Ends */
