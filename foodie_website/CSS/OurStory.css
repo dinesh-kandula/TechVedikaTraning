@@ -89,7 +89,7 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .our-story{
         flex-direction: column;
         padding: 20px;
@@ -186,7 +186,7 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .our-story .our-services-ul{
         width: 100%;
         flex-direction: row;

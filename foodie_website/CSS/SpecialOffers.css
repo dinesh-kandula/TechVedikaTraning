@@ -75,7 +75,7 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .special-dishes{
         padding: 20px;
     }
@@ -189,7 +189,7 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .special-dishes-ul .special-dishes-card{
         width: 90%;
         height: 160px;
@@ -291,7 +291,7 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .special-dishes-card .price-rating-card{
         flex-direction: column;
         width: 100%;

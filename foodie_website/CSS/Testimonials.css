@@ -20,6 +20,13 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 992px){
+    .testimonials{
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+}
+
 .best-cheff-card-container{
     width: 600px;
 }
@@ -43,6 +50,17 @@
         width: 100%;
     }
 }
+
+@media (min-width: 769px) and (max-width: 992px){
+    .best-cheff-card-container{
+        height: 400px;
+    }
+
+    .testimonials .best-cheff-card{
+        min-width: 400px;
+    }
+}
+
 
 .best-cheff-card .background-card{
     position: absolute;
@@ -72,7 +90,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .best-cheff-card .background-card{
         width: 340px;
         height: 300px;
@@ -122,8 +140,8 @@
 
     .best-cheff-card .comment-card div p{
         top: 60px;
-       left: 60px;
-       font-size: 16px;
+        left: 60px;
+        font-size: 16px;
     }
 }
 
@@ -131,6 +149,22 @@
     .best-cheff-card .comment-card{
         top: 360px;
         left: 310px;
+    }
+    .best-cheff-card .comment-card div .rectangle-comment{
+        width: 220px;
+    }
+
+    .best-cheff-card .comment-card div p{
+        top: 60px;
+       left: 60px;
+       font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .best-cheff-card .comment-card{
+        top: 360px;
+        left: 200px;
     }
     .best-cheff-card .comment-card div .rectangle-comment{
         width: 220px;
@@ -189,6 +223,19 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 992px){
+    .best-cheff-card .tasty{
+        font-size: 36px;
+        left: 20px;
+        top: 170px;
+    }
+
+    .best-cheff-card .pizza{
+        font-size: 36px;
+        top: 200px;
+        right: 16px;
+    }
+}
 
 .testimonials-customer{
     display: flex;
@@ -254,6 +301,28 @@
 
     .testimonials-customer .description{
         font-size: 18px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px){
+    .testimonials-customer{
+        align-items: center;
+    }
+
+    .testimonials-customer .title{
+        font-size: 26px;
+    }
+    .testimonials-customer .customer-heading{
+        font-size: 36px;
+        line-height: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    .testimonials-customer .description{
+        font-size: 22px;
         text-align: center;
         margin: 10px 0 10px 0;
     }
@@ -351,7 +420,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .testimonials-customer .customer-feedback{
         flex-direction: column;
         align-items: flex-start;

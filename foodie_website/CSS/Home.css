@@ -22,6 +22,13 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 992px) {
+    .main-card{
+        margin: 50px 20px 20px 20px;
+        padding: 50px 10px 10px 10px;   
+    }
+}
+
 /* Home Page Main Title Decription Styling Starts */
 
 .main-card .title-description-card{
@@ -37,7 +44,7 @@
     color: var(--black);
     font-size: 62px;
     font-weight: 800;
-    line-height: 145.523%; /* 90.224px */
+    line-height: 145.523%;
 }
 
 .title-description-card .title span{
@@ -47,7 +54,7 @@
 .title-description-card .description{
     color: #4A4A4A;
     font-size: 26px;
-    line-height: 170.5%; /* 44.33px */
+    line-height: 170.5%;
 }
 
 
@@ -74,6 +81,22 @@
     }
 
     .title-description-card .title{
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .title-description-card .description{
+        font-size: 18px;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .main-card .title-description-card{
+        width: 40%;
+    }
+
+    .title-description-card .title{
         font-size: 38px;
         margin-bottom: 12px;
     }
@@ -83,7 +106,6 @@
         margin-top: 0;
     }
 }
-
 
 .title-description-card .order-watch-card{
     display: flex;
@@ -174,6 +196,37 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 992px) {
+    .title-description-card .order-watch-card{
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .title-description-card .order-watch-card .order-now-btn{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        box-shadow: none;
+    }
+
+    .title-description-card .order-watch-card .watch-video{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .title-description-card .order-watch-card .watch-video-icon-card{
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .title-description-card .order-watch-card .watch-video-icon-card .play-icon{
+        width: 30px;
+        height: 30px;
+    }
+}
+
 
 /* Home Page Main Title Decription Styling Ends */
 
@@ -228,7 +281,7 @@
 }
 
 /* Screen Size b/w 576px and 768px */
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 992px) {
     .main-image-container{
         width: 400px;
         height: 400px;    
@@ -298,7 +351,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 992px) {
     .comment-special-item-card .comment-card{
         height: 20px;
         right: 110px;
@@ -315,6 +368,12 @@
         margin: 0;
         bottom: 170px;
         right: 175px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .comment-card p{
+        right: 220px;
     }
 }
 
@@ -378,7 +437,7 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 992px) {
     .comment-special-item-card .special-item-card{
         margin: 340px 0 -70px 0;
     }
@@ -396,6 +455,12 @@
     .item-card .item-details-card .title{
         font-size: 20px;
         margin: 5px 0 5px 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .comment-special-item-card .special-item-card{
+        margin: 304px 80px -64px 0;
     }
 }
 
@@ -445,7 +510,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 992px) {
     .item-card .item-details-card .stars-card{
         max-width: 4px 0 4px 0;
     }

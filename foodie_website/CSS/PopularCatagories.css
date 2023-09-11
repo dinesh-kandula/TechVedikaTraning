@@ -1,6 +1,7 @@
 .popular-catagories{
     --red: #FF6868;
     --white: #EFEFEF;
+    --milkyWhite: #FFF;
     --green: #39DB4A;
     --black: #000;
     --grey: #555;
@@ -21,7 +22,7 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .popular-catagories{
         width: 100%;
         margin-top: 60px;
@@ -64,7 +65,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .popular-catagories p{
         font-size: 22px;
     }
@@ -80,7 +81,7 @@
     margin: 8px;
     width: 300px;
     height: 280px; 
-    background-color: var(--white); 
+    background-color: var(--milkyWhite); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,7 +149,7 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 992px){
     .popular-catagories .all-cards{
         width: 98%;
     }
