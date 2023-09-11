@@ -1,3 +1,10 @@
+.main-card{
+    --red: #FF6868;
+    --white: #EFEFEF;
+    --green: #39DB4A;
+    --black: #000;
+    --grey: #555;
+}
 /* Home Page Main Styling Starts */
 .main-card{
     display: flex;
@@ -7,7 +14,7 @@
     margin: 60px 0 80px 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .main-card{
         flex-direction: column;
         margin: 50px 20px 20px 20px;
@@ -27,14 +34,14 @@
 
 
 .title-description-card .title{
-    color: #000;
+    color: var(--black);
     font-size: 62px;
     font-weight: 800;
     line-height: 145.523%; /* 90.224px */
 }
 
 .title-description-card .title span{
-    color: #39DB4A;
+    color: var(--green);
 }
 
 .title-description-card .description{
@@ -61,6 +68,23 @@
 }
 
 
+@media (min-width: 576px) and (max-width: 768px) {
+    .main-card .title-description-card{
+        width: 100%;
+    }
+
+    .title-description-card .title{
+        font-size: 38px;
+        margin-bottom: 12px;
+    }
+
+    .title-description-card .description{
+        font-size: 22px;
+        margin-top: 0;
+    }
+}
+
+
 .title-description-card .order-watch-card{
     display: flex;
     align-items: center;
@@ -71,9 +95,9 @@
     width: 229px;
     height: 80px;
     border-radius: 40px;
-    background: #39DB4A;
+    background: var(--green);
     box-shadow: -2px 22px 38px 0px rgba(142, 255, 154, 0.50);
-    color: #FFF;
+    color: var(--white);
     font-family: Inter;
     font-size: 26px;
     font-weight: 600;
@@ -95,7 +119,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF;
+    background-color: var(--white);
     box-shadow: 6px 27px 34px 0px rgba(0, 0, 0, 0.10);
     margin: 0 10px 0 10px;
     display: flex;
@@ -127,6 +151,29 @@
     }
 }
 
+@media (min-width: 576px) and (max-width: 768px) {
+    .title-description-card .order-watch-card .order-now-btn{
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 28px;
+    }
+
+    .title-description-card .order-watch-card .watch-video{
+        font-size: 20px;
+    }
+
+    .title-description-card .order-watch-card .watch-video-icon-card{
+        width: 60px;
+        height: 60px;
+    }
+
+    .title-description-card .order-watch-card .watch-video-icon-card .play-icon{
+        width: 30px;
+        height: 30px;
+    }
+}
+
 
 /* Home Page Main Title Decription Styling Ends */
 
@@ -146,7 +193,7 @@
 .main-card .main-image-box{
     width: 500px;
     height: 500px;
-    background-color: #39DB4A;
+    background-color: var(--green);
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -159,6 +206,7 @@
     margin: 35px 0 0 0;
 }
 
+/* Screen Size bellow 576px */
 @media (max-width: 576px) {
     .main-image-container{
         width: 400px;
@@ -176,6 +224,27 @@
 
     .main-card .main-image-container .main-image-card .main-img{
         width: 230px;
+    }
+}
+
+/* Screen Size b/w 576px and 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+    .main-image-container{
+        width: 400px;
+        height: 400px;    
+    }
+
+    .main-card .main-image-card{
+        top: 200px;
+    }
+
+    .main-card .main-image-box{
+        width: 400px;
+        height: 400px;
+    }
+
+    .main-card .main-image-container .main-image-card .main-img{
+        width: 312px;
     }
 }
 
@@ -204,7 +273,7 @@
     z-index: 2;
     width: 170px;
     margin: 0 50px 50px 0;
-    color: #FF6868;
+    color: var(--red);
     font-family: Inter;
     font-size: 18px;
 }
@@ -229,6 +298,26 @@
     }
 }
 
+@media (min-width: 576px) and (max-width: 768px) {
+    .comment-special-item-card .comment-card{
+        height: 20px;
+        right: 110px;
+        top: 200px;
+    }
+            
+    .comment-special-item-card .comment-card .rectangle-comment{
+        width: 250px;
+        bottom: 100px;
+    }
+
+    .comment-card p{
+        font-size: 16px;
+        margin: 0;
+        bottom: 170px;
+        right: 175px;
+    }
+}
+
 .comment-special-item-card .special-item-card{
     display: flex;
     align-items: center;
@@ -243,7 +332,7 @@
     border-radius: 25px;
     width: 349px;
     height: 120px; 
-    background: #FFF;
+    background: var(--white);
     box-shadow: 7px 35px 51px 0px rgba(0, 0, 0, 0.14);
 }
 
@@ -288,6 +377,28 @@
     }
 }
 
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .comment-special-item-card .special-item-card{
+        margin: 340px 0 -70px 0;
+    }
+    .special-item-card .item-card{
+        width: 250px;
+        height: 80px;
+        border-radius: 12px;
+    }
+    .special-item-card .item-card img{
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+    }
+
+    .item-card .item-details-card .title{
+        font-size: 20px;
+        margin: 5px 0 5px 0;
+    }
+}
+
 .item-card .item-details-card .stars-card{
     display: flex;
     align-items: center;
@@ -307,7 +418,7 @@
 }
 
 .item-card .item-details-card .price span{
-    color: #FF7979;
+    color: var(--red);
     font-size: 18px;
     font-weight: 600;
 }
@@ -331,6 +442,26 @@
 
     .item-card .item-details-card .price span{
         font-size: 12px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .item-card .item-details-card .stars-card{
+        max-width: 4px 0 4px 0;
+    }
+
+    .item-card .item-details-card .stars-card i{
+        font-size: 18px;
+        margin: 0 8px 0 0;
+    }
+
+    .item-card .item-details-card .price{
+        font-size: 20px;
+        margin: 10px 0 0 0;
+    }    
+
+    .item-card .item-details-card .price span{
+        font-size: 16px;
     }
 
 }

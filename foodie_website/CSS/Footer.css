@@ -4,6 +4,7 @@
     --white: #FFF;
     --lightGreen: lightgreen;
     --font: Inter;
+    --grey: #555;
 }
 
 /* Footer Style Starts */
@@ -52,6 +53,22 @@
     }
 }
 
+
+@media (min-width: 576px) and (max-width: 768px){
+    .footer .follow-us-section{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .follow-us-section .logo-about{
+        width: 100%;
+    }
+
+    .follow-us-section .logo-about .about{
+        font-size: 18px;
+    }
+}
+
 .follow-us-section .useful-link{
     display: flex;
     flex-direction: column;
@@ -86,6 +103,23 @@
     }
 }
 
+
+@media (min-width: 576px) and (max-width: 768px){
+    .follow-us-section .useful-link{
+        margin: 0 10px 0 10px;
+    }
+
+    .useful-link p{
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .useful-link li a{
+        font-size: 16px;
+    }
+}
+
 .footer .social-media-copyright{
     display: flex;
     align-items: center;
@@ -109,11 +143,11 @@
 
 
 .social-media .active{
-    background-color: #39DB4A;
+    background-color: var(--green);
 }
 
 .social-media .in-active{
-    background-color: #EDFFEF;
+    background-color: var(--white);
 }
 
 .social-media-copyright .copy-right{
@@ -121,7 +155,7 @@
 }
 
 .social-media-copyright .copy-right p{
-    color: #555;
+    color: var(--grey);
     font-family: Inter;
     font-size: 22px;
 }
@@ -142,7 +176,31 @@
         height: 30px;   
     }
 
+    .social-media-copyright .copy-right{
+        margin: 0;
+    }
 
+    .social-media-copyright .copy-right p{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width:768px){
+    .footer .social-media-copyright{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .social-media .social-icon-card{
+        width: 50px;
+        height: 50px; 
+    }
+
+    .social-media .social-icon-card img{
+        width: 30px;
+        height: 30px;   
+    }
 
     .social-media-copyright .copy-right{
         margin: 0;
@@ -151,7 +209,5 @@
     .social-media-copyright .copy-right p{
         font-size: 16px;
     }
-
-
 }
 /* Footer Style Ends */

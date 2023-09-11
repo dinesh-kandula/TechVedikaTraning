@@ -1,11 +1,19 @@
 /* Special Dishes Styling Star */
 .special-dishes{
+    --red: #FF6868;
+    --white: #EFEFEF;
+    --green: #39DB4A;
+    --black: #000;
+    --grey: #555;
+}
+
+.special-dishes{
     font-family: Inter;
     padding: 50px;
 }
 
 .special-dishes p{
-    color: #FF6868;
+    color: var(--red);
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 3.5px;
@@ -19,7 +27,7 @@
 }
 
 .title-navigation-card h1{
-    color: #000;
+    color: var(--black);
     width: 580px; 
     font-size: 60px;
     font-weight: 700;
@@ -42,11 +50,11 @@
 }
 
 .navigation-card .left-arrow{
-    background-color: #EFEFEF;
+    background-color: var(--white);
 }
 
 .navigation-card .right-arrow{
-    background-color: #39DB4A;
+    background-color: var(--green);
 }
 
 @media (max-width: 576px){
@@ -63,6 +71,24 @@
     .navigation-card .arrow-cards{
         width: 40px;
         height: 40px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px){
+    .special-dishes{
+        padding: 20px;
+    }
+    .special-dishes p{
+        font-size: 22px;
+    }    
+    .special-dishes .title-navigation-card h1{
+        font-size: 32px;
+    }
+
+    .navigation-card .arrow-cards{
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -92,7 +118,7 @@
     align-self: flex-end;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
-    background-color: #39DB4A;
+    background-color: var(--green);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +134,7 @@
 }
 
 .special-dishes-card h1{
-    color: #000;
+    color: var(--black);
     font-size: 30px;
     font-weight: 600;
     margin: 5px 0 5px 20px;
@@ -116,7 +142,7 @@
 }
 
 .special-dishes-card p{
-    color: #555;
+    color: var(--grey);
     font-size: 22px;
     font-weight: 600;
     margin: 5px 0 5px 20px;
@@ -125,7 +151,7 @@
 
 @media (max-width: 576px){
     .special-dishes-ul .special-dishes-card{
-        /* width: 360px; */
+        width: 90%;
         height: 120px;
         border-radius: 16px; 
         flex-direction: row;
@@ -133,7 +159,7 @@
     }
 
     .special-dishes-ul .special-dishes-card .favorites-card{
-        width: 160px;
+        width: 90px;
         height: 40px;
         border-top-right-radius: 16px;
         border-bottom-left-radius: 16px;
@@ -142,7 +168,7 @@
     }
 
     .special-dishes-ul .special-dishes-card .favorites-card i{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .special-dishes-ul .special-dishes-card img{
@@ -162,6 +188,46 @@
     }
 }
 
+
+@media (min-width: 576px) and (max-width: 768px){
+    .special-dishes-ul .special-dishes-card{
+        width: 90%;
+        height: 160px;
+        border-radius: 16px; 
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .special-dishes-ul .special-dishes-card .favorites-card{
+        width: 90px;
+        height: 60px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        order: 2;
+        align-self: flex-start;
+    }
+
+    .special-dishes-ul .special-dishes-card .favorites-card i{
+        font-size: 20px;
+    }
+
+    .special-dishes-ul .special-dishes-card img{
+        width: 130px;
+    }
+
+    .special-dishes-card h1{
+        font-size: 24px;
+        margin: 5px 0 5px 5px;
+        text-align: left;
+    }
+
+    .special-dishes-card p{
+        font-size: 16px;
+        margin-left: 5px;
+        text-align: left;
+    }
+}
+
 .special-dishes-card .price-rating-card{
     display: flex;
     align-items: center;
@@ -171,13 +237,13 @@
 }
 
 .price-rating-card p{
-    color: #000;
+    color: var(--black);
     font-size: 30px;
     font-weight: 600;
 }
 
 .price-rating-card p span{
-    color: #FF6868; 
+    color: var(--red); 
     font-size: 24px;
 }
 
@@ -200,11 +266,17 @@
         width: 100%;
     }
     .price-rating-card p{
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 5px;
+        display: flex;
+        align-items: center;
     }
     .price-rating-card p span{
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .price-rating-card .rating-card{
+        justify-content: center;
     }
 
     .price-rating-card .rating-card i{
@@ -213,10 +285,42 @@
 
     .price-rating-card .rating-card p{
         font-size: 16px;
+        margin-left: 2px;
     }
 
 }
 
+
+@media (min-width: 576px) and (max-width: 768px){
+    .special-dishes-card .price-rating-card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .price-rating-card p{
+        font-size: 22px;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .price-rating-card p span{
+        font-size: 20px;
+    }
+
+    .price-rating-card .rating-card{
+        justify-content: center;
+    }
+
+
+    .price-rating-card .rating-card i{
+        font-size: 22px;
+    }
+
+    .price-rating-card .rating-card p{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+}
 
 
 /* Special Dishes Styling Ends */

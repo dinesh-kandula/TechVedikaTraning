@@ -1,3 +1,10 @@
+.popular-catagories{
+    --red: #FF6868;
+    --white: #EFEFEF;
+    --green: #39DB4A;
+    --black: #000;
+    --grey: #555;
+}
 /* Popular Catagories Styling Start */
 
 .popular-catagories{
@@ -13,8 +20,16 @@
     }
 }
 
+
+@media (min-width: 576px) and (max-width: 768px){
+    .popular-catagories{
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
 .popular-catagories p{
-    color: #FF6868;
+    color: var(--red);
     font-family: Inter;
     font-size: 20px;
     font-weight: 700;
@@ -23,7 +38,7 @@
 }
 
 .popular-catagories h1{
-    color: #000;
+    color: var(--black);
     text-align: center;
     font-family: Inter;
     font-size: 60px;
@@ -49,12 +64,23 @@
     }
 }
 
+@media (min-width: 576px) and (max-width: 768px){
+    .popular-catagories p{
+        font-size: 22px;
+    }
+
+    .popular-catagories h1{
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+}
+
 
 .popular-catagories .all-cards .each-card{
     margin: 8px;
     width: 300px;
     height: 280px; 
-    background-color: #FFF; 
+    background-color: var(--white); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +110,7 @@
 }
 
 .each-card p{
-    color: #555;
+    color: var(--grey);
     text-align: center;
     font-family: Inter;
     font-size: 22px;
@@ -92,6 +118,9 @@
 }
 
 @media (max-width: 576px){
+    .popular-catagories .all-cards{
+        width: 98%;
+    }
 
     .popular-catagories .all-cards .each-card{
         width: 150px;
@@ -115,6 +144,38 @@
 
     .each-card p{
         font-size: 12px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px){
+    .popular-catagories .all-cards{
+        width: 98%;
+    }
+
+    .popular-catagories .all-cards .each-card{
+        width: 170px;
+        height: 260px;
+        border-radius: 34px;
+        margin: 4px;
+    }
+    
+    .each-card .card-image{
+        width: 100px;
+        height: 100px;
+    }
+
+    .each-card .card-image img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .each-card h1{
+        font-size: 22px;
+    }
+
+    .each-card p{
+        font-size: 14px;
     }
 }
 
