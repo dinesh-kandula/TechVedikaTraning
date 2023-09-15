@@ -1,0 +1,129 @@
+.footer{
+    --headerBlack : #020305;
+    --white: #FFF;
+    --headerBgBlack: #0D0F12;
+    --descriptionColor: #171E27;
+    --iconBgColor: #A9C2CB;
+    --fontFamiliy: Plus Jakarta Sans;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.footer .footer-top-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top-container .logo-card img{
+    width: 150px;
+}
+
+.footer-top-container .card-2{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.footer-top-container .card-2 li a{
+    color: var(--headerBlack);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-top-container .card-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.footer-top-container .card-3 a{
+    color: var(--descriptionColor);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer .footer-bottom-container p a{
+    color: #5C5050;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: var(--fontFamiliy);
+}
+
+
+@media (min-width: 769px) and (max-width: 992px){
+    .footer{
+        padding: 26px;
+    }
+    .footer .footer-top-container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer .footer-top-container .card-3{
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px){
+    .footer{
+        padding: 22px;
+    }
+    .footer .footer-top-container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer .footer-top-container .card-3{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    .footer{
+        padding: 20px;
+    }
+    .footer .footer-top-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer-top-container .logo-card {
+        align-self: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-top-container .card-2{
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-self: center;
+        align-items: center;
+    }
+
+    .footer-top-container .card-2 li{
+        margin-bottom: 5px;
+    }
+
+    .footer-top-container .card-3{
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .footer-bottom-container{
+        align-self: center;
+    }
+} 
