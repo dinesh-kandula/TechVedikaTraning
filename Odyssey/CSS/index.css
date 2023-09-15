@@ -1,6 +1,6 @@
 /* Common Styling Starts */
 body{
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     --headerBlack : #020305;
     --white: #FFF;
@@ -28,7 +28,7 @@ ul{
     position: fixed;
     top: 0;
     z-index: 100;
-    padding: 35px;
+    padding: 32px;
     background-color: rgb(255,255,255, 0.6);
 }
 
