@@ -1,3 +1,231 @@
+/* Common Styling Starts */
+body{
+    box-sizing: content-box;
+    margin: 0;
+    --headerBlack : #020305;
+    --white: #FFF;
+    --headerBgBlack: #0D0F12;
+    --fontFamiliy: Plus Jakarta Sans;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Common Styling Ends */
+
+
+
+
+/* Header Section Styling Starts */
+.header{
+    width: 94vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 35px;
+    background-color: rgb(255,255,255, 0.6);
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .header{
+        padding: 30px;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px){
+    .header{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    .header{
+        padding: 10px;
+    }
+}
+
+/* Header Section Logo Design Styling Starts */
+.logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 993px){
+    .logo-section .logo{
+        width: 200px;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 992px){
+    .logo-section .logo{
+        width: 150px;
+    }
+}
+
+@media (max-width: 576px){
+    .logo-section .logo{
+        width: 130px;
+    }
+}
+
+/* Header Section Logo Design Styling Ends*/
+
+/* Header Section Nav Button Styling Starts */
+.nav-button-ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+@media (max-width: 576px){
+    .nav-button-ul{
+        display: none;
+    }
+}
+
+.nav-button-ul .nav-button{
+    background-color: transparent;
+    border: 0;
+    color: var(--headerBlack);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-button-ul .nav-button-sign-in{
+    cursor: pointer;
+    padding: 16px 40px; 
+    background-color: var(--headerBgBlack);
+    border: 0;
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
+}
+
+@media (max-width: 992px){
+    .nav-button-ul .nav-button{
+        font-size: 16px;
+    }
+    .nav-button-ul .nav-button-sign-in{
+        font-size: 14px;
+        padding: 14px 30px; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .nav-button-ul .nav-button{
+        font-size: 14px;
+    }
+    .nav-button-ul .nav-button-sign-in{
+        font-size: 14px;
+        padding: 12px 20px; 
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px){
+    .nav-button-ul .nav-button{
+        font-size: 12px;
+    }
+    .nav-button-ul .nav-button-sign-in{
+        font-size: 12px;
+        padding: 8px 16px; 
+    }
+}
+
+/* Header Section Nav Button Styling Ends */
+
+/* Header Section Nav Icon Links Styling Starts */
+.header-nav-icon{
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media (min-width: 576px){
+    .header-nav-icon{
+        display: none;
+    }
+}
+
+.header-nav-icon .nav-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon img{
+    width: 24px;
+}
+
+.header-nav-icon .nav-link-ul{
+    display: none;
+    position: absolute;
+    top: 10px;
+    flex-direction: column;
+    width: 130px;
+}
+
+.nav-link-ul li{
+    text-align: center;
+    margin: 8px 0;
+    border-bottom: 1px solid var(--headerBlack);   
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.nav-link-ul .nav-link{
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    font-family: var(--fontFamiliy);
+    color: var(--headerBlack);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-button-ul .nav-link:hover{
+    box-shadow: 2px 2px 8px #FFF;
+}
+
+.nav-link-ul .nav-link-sign-in{
+    cursor: pointer;
+    padding: 8px 20px; 
+    background-color: var(--headerBgBlack);
+    border: 2px solid var(--headerBlack);
+    margin-bottom: 6px;
+    color: var(--white);
+    font-size: 16px;
+    font-family: var(--fontFamiliy);
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
+}
+
+.header-nav-icon:hover .nav-link-ul{
+    display: flex;
+    right: 0;
+    top: 35px;
+}
+/* Header Section Nav Icon Links Styling Ends */
+/* Header Section Styling Ends */
+
+
+
+
+/* Home Section Styling Starts */
 .home{
     --headerBlack : #020305;
     --white: #FFF;
@@ -28,7 +256,6 @@
     }
 }
 
-
 @media (min-width: 578px) and (max-width: 768px){
     .home{
         top: 80px;
@@ -42,13 +269,6 @@
         height: 700px;
     }
 }
-
-
-
-
-
-
-
 
 /* Top Container Styling Starts */
 .top-container{
@@ -106,13 +326,6 @@
 
 /* Top Container Styling Ends */
 
-
-
-
-
-
-
-
 /* Get Started Styling Starts */
 .get-started-container{
     position: absolute;
@@ -168,7 +381,6 @@
     margin-right: 20px;
     margin-left: 30px;
 }
-
 
 @media (min-width: 1200px){
     .get-started-container{
@@ -348,12 +560,6 @@
 
 /* Get Started Styling Ends */
 
-
-
-
-
-
-
 /* Space Girl Styling Starts */
 .space-girl-container{
     position: absolute;
@@ -365,7 +571,6 @@
     display: inline;
     left: 520px;
 }
-
 
 @media (min-width: 993px) and (max-width: 1200px){
     .space-girl-container .container{
@@ -406,7 +611,6 @@
     width: 700px;
 }
 
-
 @media (min-width: 993px) and (max-width: 1200px){
     .space-girl-container .container .space-girl-image-card img{
         width: 600px;
@@ -433,18 +637,12 @@
 
 /* Space Girl Image Card Styling Ends*/
 
-
-
-
-
-
 /* Space Girl Exercising Card Styling Starts*/
 .space-girl-container .container .exercising-card{
     position: absolute;
     z-index: 2;
     left: 420px;
     top: 280px;
-
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -559,13 +757,6 @@
 } 
 
 /* Space Girl Exercising Card Styling Ends*/
-
-
-
-
-
-
-
 
 /* Space Girl Space Walk Card Styling Starts*/
 
@@ -742,24 +933,16 @@
     }
 } 
 
-
 /* Space Girl Space Walk Card Styling Ends*/
 
 
-
-
-
-
-
-
-/* Space Girl Total Tim ein Space Styling Starts*/
+/* Space Girl Total Time in Space Styling Starts*/
 
 .space-girl-container .container .total-in-space-card{
     position: absolute;
     z-index: 4;
     left: 60px;
     top: 670px;
-    
     width: 460px;
     height: 120px;
     padding: 20px;
@@ -935,7 +1118,610 @@
     }
 } 
 
-/* Space Girl Total Time in Space Styling ENds*/
+/* Space Girl Total Time in Space Styling Ends*/
+/* Space Girl Styling Starts */
+/* Home Section Styling Ends */
 
 
-/* Get Started Styling Starts */
+
+
+/* Branding Section Styling Starts */
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.brand div{
+    margin: 0px 20px;
+}
+/* Branding Section Styling Ends */
+
+
+
+
+/* Section 3 Styling Starts */
+.section-3{
+    --headerBlack : #020305;
+    --white: #FFF;
+    --descriptionColor: #171E27;
+    --iconBgColor: #A9C2CB;
+    --fontFamiliy: Plus Jakarta Sans;
+}  
+
+.section-3{
+    display: flex;
+    justify-content: space-between; 
+    padding: 40px;
+}
+
+.section-3 .container-1{
+    width: 40%;
+    align-self: center;
+}
+
+.section-3 .container-1 p{
+    color: var(--headerBlack);
+    font-family: var(--fontFamiliy);
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.section-3 .un-ordered-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 55%;
+}
+
+.un-ordered-list li{
+    width: 40%;
+    margin: 5px;
+}
+
+.un-ordered-list li .icon-card{
+    width: 100px;
+    height: 100px;
+    border-radius: 24px;
+    background: #A9C2CB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.un-ordered-list li .head-para h1{
+    color: var(--headerBlack);
+    font-family: var(--fontFamiliy);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.un-ordered-list li .head-para p{
+    color: var(--descriptionColor);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+
+
+@media (min-width: 1200px){
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+
+}
+
+@media (min-width: 578px) and (max-width: 768px){
+    .section-3{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section-3 .container-1{
+        width: 100%;
+    }
+
+    .section-3 .container-1 p{
+        font-size: 32px;
+    }
+
+    .section-3 .un-ordered-list{
+        align-self: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px){
+    .section-3{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section-3 .container-1{
+        width: 100%;
+    }
+
+    .section-3 .container-1 p{
+        font-size: 32px;
+    }
+
+    .section-3 .un-ordered-list{
+        align-self: center;
+        width: 100%;
+    }
+
+    .section-3 .un-ordered-list li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .section-3 .un-ordered-list li .icon-card{
+        flex-shrink: 0;
+        border-radius: 14px;
+        margin-right: 20px;
+        width: 52px;
+        height: 52px;
+    }
+    
+    .un-ordered-list li .icon-card img{
+       width: 34px;
+       height: 34px;
+    }
+
+
+    .un-ordered-list li .head-para h1{
+        font-size: 18px;
+    }
+
+    .un-ordered-list li .head-para p{
+        font-size: 14px;
+    }
+
+    .un-ordered-list li .icon-card-special{
+        margin-right: 20px;
+    }
+} 
+/* Section 3 Styling Ends */
+
+
+
+
+/* Section 4 Styling Starts */
+.section-4{
+    --headerBlack : #020305;
+    --white: #FFF;
+    --headerBgBlack: #0D0F12;
+    --descriptionColor: #171E27;
+    --iconBgColor: #A9C2CB;
+    --fontFamiliy: Plus Jakarta Sans;
+}
+
+.section-4{
+    padding: 40px;
+}
+
+.section-4 .postion-container{
+    position: relative;
+}
+
+.postion-container .bg-container{
+    position: absolute;
+    z-index: 1;
+    background-image: url("https://res.cloudinary.com/dfspkh5oi/image/upload/v1694607733/TechVedika/Cosmos%2013%20Sep/Rectangle_8_susrws.png");
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    border-radius: 40px; 
+    display: flex;
+    align-items: flex-start;  
+}
+
+.postion-container .bg-container h1{
+    color: var(--white);
+    text-align: center;
+    font-family: var(--fontFamiliy);
+    font-size: 54px;
+    font-weight: 800;
+    padding: 0 30px;
+}
+
+.postion-container .flex-box-container{
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.postion-container .flex-box-container .flex-box{
+    width: 300px;
+    border-radius: 24px;
+    background-color: var(--white);
+    box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.20);
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.flex-box-container .flex-box .serial-number{
+    color: var(--iconBgColor);
+    font-family: var(--fontFamiliy);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 90px;
+    margin: 5px 0;
+}
+
+.flex-box-container .flex-box h2{
+    color: var(--headerBlack);
+    font-family: var(--fontFamiliy);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.flex-box-container .flex-box p{
+    color: var(--descriptionColor);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+
+@media (min-width: 769px) and (max-width: 992px){
+    .postion-container .bg-container h1{
+        font-size: 38px;
+    }
+    .flex-box-container .flex-box .serial-number{
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .flex-box-container .flex-box .h2{
+        font-size: 20px;
+    }
+
+    .flex-box-container .flex-box p{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px){
+    .postion-container .bg-container{
+        height: 300px;    
+    }
+
+    .postion-container .bg-container h1{
+        font-size: 32px;
+    }
+
+    .section-4 .flex-box-container{
+        flex-direction: column;
+        top: 180px;
+    }
+   
+    .flex-box-container .flex-box .serial-number{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .flex-box-container .flex-box .h2{
+        font-size: 20px;
+    }
+
+    .flex-box-container .flex-box p{
+        font-size: 16px;
+    }
+}   
+
+@media (max-width: 576px){
+    .postion-container .bg-container h1{
+        font-size: 32px;
+    }
+    
+    .section-4 .flex-box-container{
+        flex-direction: column;
+    }
+
+    .flex-box-container .flex-box .serial-number{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .flex-box-container .flex-box .h2{
+        font-size: 20px;
+    }
+
+    .flex-box-container .flex-box p{
+        font-size: 16px;
+    }
+} 
+/* Section 4 Styling Ends */
+
+
+
+
+
+/* Section 5 Styling Starts */
+.section-5{
+    --headerBlack : #020305;
+    --white: #FFF;
+    --headerBgBlack: #0D0F12;
+    --descriptionColor: #171E27;
+    --iconBgColor: #A9C2CB;
+    --fontFamiliy: Plus Jakarta Sans;
+}
+
+.section-5{
+    margin: 620px 40px 40px 40px;
+    height: 500px;
+    border-radius: 40px;
+    background-image: url('https://res.cloudinary.com/dfspkh5oi/image/upload/v1694607732/TechVedika/Cosmos%2013%20Sep/Rectangle_504_ue4afs.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+.section-5 h1{
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 10px
+}
+.section-5 p{
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.section-5 .email-subscribe{
+    display: flex;
+    align-items: center;
+}
+
+.email-subscribe #email{
+    outline: none;
+    display: flex;
+    padding: 18px 38px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 16px;
+    border: 0;
+    background-color: var(--ffffff, #FFF);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+}
+
+.email-subscribe .subscribe{
+    display: flex;
+    padding: 18px 54px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 0;
+    background-color: var(--a-9-c-2-cb, #A9C2CB);
+    box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+    font-weight: 600;
+}
+.email-subscribe .subscribe:hover{
+    color: var(--headerBlack);
+}
+
+@media (min-width: 578px) and (max-width: 768px){
+    .section-5{
+        margin: 1100px 40px 40px 40px;
+        height: 350px;
+        padding-left: 40px;
+    }
+
+    .section-5 h1{
+        font-size: 42px;
+    }
+
+    .section-5 p{
+        font-size: 18px;
+    }
+
+    .email-subscribe #email{
+        padding: 20px 16px;
+        font-size: 16px;
+    }
+
+    .email-subscribe .subscribe{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px){
+    .section-5{
+        margin: 1150px 20px 20px 20px;
+        height: 300px;
+        padding-left: 20px;
+        border-radius: 16px;
+    }
+
+    .section-5 h1{
+        font-size: 28px;
+    }
+
+    .section-5 p{
+        font-size: 14px;
+    }
+
+    .section-5 .email-subscribe{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .email-subscribe #email{
+        font-size: 16px;
+        padding: 18px 14px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 95%;
+    }
+
+    .email-subscribe .subscribe{
+        font-size: 16px;
+        padding: 16px 42px;
+        width: 100%;
+    }
+} 
+/* Section 5 Styling Ends */
+
+
+
+
+/* Footer Section Styling Starts */
+.footer{
+    --headerBlack : #020305;
+    --white: #FFF;
+    --headerBgBlack: #0D0F12;
+    --descriptionColor: #171E27;
+    --iconBgColor: #A9C2CB;
+    --fontFamiliy: Plus Jakarta Sans;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.footer .footer-top-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top-container .logo-card img{
+    width: 150px;
+}
+
+.footer-top-container .card-2{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.footer-top-container .card-2 li a{
+    color: var(--headerBlack);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-top-container .card-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.footer-top-container .card-3 a{
+    color: var(--descriptionColor);
+    font-family: var(--fontFamiliy);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer .footer-bottom-container p a{
+    color: #5C5050;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: var(--fontFamiliy);
+}
+
+
+@media (min-width: 769px) and (max-width: 992px){
+    .footer{
+        padding: 26px;
+    }
+    .footer .footer-top-container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer .footer-top-container .card-3{
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px){
+    .footer{
+        padding: 22px;
+    }
+    .footer .footer-top-container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer .footer-top-container .card-3{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    .footer{
+        padding: 20px;
+    }
+    .footer .footer-top-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer-top-container .logo-card {
+        align-self: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-top-container .card-2{
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-self: center;
+        align-items: center;
+    }
+
+    .footer-top-container .card-2 li{
+        margin-bottom: 5px;
+    }
+
+    .footer-top-container .card-3{
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .footer-bottom-container{
+        align-self: center;
+    }
+} 
+/* Footer Section Styling Ends */
