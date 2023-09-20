@@ -1,0 +1,96 @@
+/* Common Styling Starts */
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Common Styling Ends */
+
+/* Top Header Bar Styling Starts */
+
+/* Follow Us Nav Bar Styling Starts */
+
+.top-contact-us{
+    padding: 4px;
+    background-color: #e8e8e6;
+}
+
+.top-contact-us li .nav-link {
+    color: #5e5757!important;
+    padding: 0 16px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.top-contact-us li a:hover{
+    font-weight: 550;
+}
+
+
+.top-contact-us .news-nav-item{
+    border-right: 1px solid #a19696;
+    border-left: 1px solid #a19696;
+}
+
+@media (max-width: 750px){
+    .top-contact-us{
+        display: none;
+    }
+}
+/* Follow Us Nav Bar Styling Ends */
+
+/* Top Bar Header Styling Starts */
+.top-bar{
+    --orange:#f26f35;
+}
+
+.top-bar{
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.top-bar a .techv-logo{
+    height: 35px;
+}
+
+.top-bar div button{
+    border: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar a .techv-logo{
+        height: 25px;
+    }
+}
+
+
+/* @media screen and (min-width: 991px) { */
+    .top-bar .dropdown:hover > .dropdown-menu{
+        display: block;
+        margin-top: 0;
+    }
+/* } */
+
+.top-bar .dropdown-menu{
+    --bs-dropdown-link-active-bg: var(--orange);
+}
+
+.top-bar .nav-link{
+    font-size: 16px;
+    color: black;
+}
+
+@media screen and (max-width: 991px) {
+    .top-bar .dropdown-menu{
+        border: 0;
+        --bs-dropdown-bg: transparent;
+        padding-left: 40px;
+    }
+
+    .dropdown-item::before{
+        transform: rotate(-90deg);
+    }
+}
+
+/* Top bar Header Styling Ends */
+
+/* Top Header Bar Styling Ends */
