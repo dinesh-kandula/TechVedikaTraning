@@ -2,8 +2,16 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    --orange : #f46e27;
+    --white : #fff;
+    --shadow-white: #ccc;
+    --grey : #5e5757;
+    --border-grey: #a19696;
+    --black: #000;
+    --fontFamiliy: 'Nunito', sans-serif!important;
 }
 /* Common Styling Ends */
+
 
 /* Top Header Bar Styling Starts */
 
@@ -15,7 +23,7 @@ body{
 }
 
 .top-contact-us li .nav-link {
-    color: #5e5757!important;
+    color: var(--grey)!important;
     padding: 0 16px;
     font-size: 15px;
     font-family: sans-serif;
@@ -25,10 +33,9 @@ body{
     font-weight: 550;
 }
 
-
 .top-contact-us .news-nav-item{
-    border-right: 1px solid #a19696;
-    border-left: 1px solid #a19696;
+    border-right: 1px solid var(--border-grey);
+    border-left: 1px solid var(--border-grey);
 }
 
 @media (max-width: 750px){
@@ -38,14 +45,30 @@ body{
 }
 /* Follow Us Nav Bar Styling Ends */
 
-/* Top Bar Header Styling Starts */
-.top-bar{
-    --orange:#f26f35;
+/* Great Place to work Styling Starts */
+.great-place-to-work{
+    position: absolute;
+    right: 1%;
+    top: 0px;
+    z-index: 9999;
+}
+.great-place-to-work img{
+    width: 60px;
 }
 
+@media screen and (max-width: 750px) {
+    .great-place-to-work img{
+        width: 40px;
+    }
+}
+
+/* Great Place to work Styling Starts */
+
+/* Top Bar Header Styling Starts */
+
 .top-bar{
-    background-color: #fff;
-    box-shadow: 0 0 10px #ccc;
+    background-color: var(--white);
+    box-shadow: 0 0 10px var(--shadow-white);
 }
 
 .top-bar a .techv-logo{
@@ -62,13 +85,12 @@ body{
     }
 }
 
-
-/* @media screen and (min-width: 991px) { */
+@media screen and (min-width: 991px) {
     .top-bar .dropdown:hover > .dropdown-menu{
         display: block;
         margin-top: 0;
     }
-/* } */
+}
 
 .top-bar .dropdown-menu{
     --bs-dropdown-link-active-bg: var(--orange);
@@ -76,7 +98,7 @@ body{
 
 .top-bar .nav-link{
     font-size: 16px;
-    color: black;
+    color: var(--black);
 }
 
 @media screen and (max-width: 991px) {
@@ -94,3 +116,353 @@ body{
 /* Top bar Header Styling Ends */
 
 /* Top Header Bar Styling Ends */
+
+
+/* Main Carousel Section Styling Starts */
+.main-carousel-section .carousel-indicators button{
+    background-color: var(--orange);    
+}
+
+.main-carousel-section img{
+    max-width: 100%;
+    width: 100vw;
+    height: 75vh;
+    object-fit: cover !important;
+}
+
+@media screen and (min-width: 321px) and (max-width: 576px) {
+    .main-carousel-section img{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-carousel-section img{
+        height: 55vh;
+    }
+} 
+
+.main-carousel-section .carousel-caption{
+    left: 5%;
+    top: 0%;
+    right: unset;
+    bottom: unset;
+    text-align: left;
+    max-width: 40%;
+}
+
+.main-carousel-section .carousel-caption .carousel-label-main-heading{
+    color: var(--white);
+    border-color: var(--orange);
+    background: transparent;
+    border-radius: 20px;
+}
+
+.main-carousel-section .carousel-caption .carousel-label-heading{
+    font-size: 46px;
+    color: var(--orange);
+    font-family: var(--fontFamiliy);
+    line-height: 60px;
+}
+
+.main-carousel-section .carousel-caption .carousel-label-description{
+    font-size: 19px;
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+    line-height: 36px;
+}
+
+.main-carousel-section .carousel-caption .explore-btn {
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    font-family: var(--fontFamiliy);
+    background-color: var(--orange);
+    border-color: var(--orange);
+    border-radius: 20px;
+}
+
+.main-carousel-section .carousel-caption .explore-btn:hover{
+    box-shadow: 0 0 10px var(--orange);
+}
+
+@media screen and (min-width: 1200px) {
+    .main-carousel-section .carousel-caption{
+        padding: 1% 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .main-carousel-section .carousel-caption{
+        padding: 1% 0;
+    }
+    
+    .main-carousel-section .carousel-caption .carousel-label-heading{
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .main-carousel-section .carousel-caption .carousel-label-description{
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .main-carousel-section .carousel-caption .explore-btn {
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 19px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) { 
+    .main-carousel-section .carousel-caption{
+        padding: 5% 0;
+    }
+
+    .main-carousel-section .carousel-caption .carousel-label-heading{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .main-carousel-section .carousel-caption .carousel-label-description{
+        font-size: 10px;
+        line-height: 26px;
+    }
+
+    .main-carousel-section .carousel-caption .explore-btn {
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 16px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-carousel-section .carousel-caption .carousel-label-main-heading{
+        font-size: 11px;
+    }
+
+    .main-carousel-section .carousel-caption{
+        max-width: 75%;
+    }
+    
+    .main-carousel-section .carousel-caption .carousel-label-heading{
+        font-size: 14px;
+        line-height: 12px;
+    }
+
+    .main-carousel-section .carousel-caption .carousel-label-description{
+        font-size: 10px;
+        line-height: 16px;
+        margin-bottom: 8px;
+    }
+
+    .main-carousel-section .carousel-caption .explore-btn {
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 16px;
+        border-radius: 20px;
+    }
+}
+
+/* Main Carousel Section Styling Ends */
+
+
+/* Resources and Projects Styling Starts */
+.resources-projects-sections .each-resources{
+    height: 150px;
+    padding: 20px;
+    color: white;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resources-projects-sections .each-resources h3{
+    font-family: var(--fontFamiliy);
+    font-size: 24px;
+}
+
+.resources-projects-sections .each-resources hr{
+    background-color: var(--white);
+    width: 60%;
+    height: 1.5px;
+    opacity: 1;
+    margin: 0 0 10px 0;
+    color: var(--white);
+}
+
+.resources-projects-sections .each-resources p{
+    font-family: var(--fontFamiliy);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .resources-projects-sections .each-resources{
+        height: 80px;
+    }
+    .resources-projects-sections .each-resources h3{
+        font-size: 22px;
+    }
+
+    .resources-projects-sections .each-resources p{
+        font-size: 14px;
+    }
+}
+/* Resources and Projects Styling Ends */
+
+
+/* Our Services Styling Starts */
+.our-services-section{
+    min-height: 450px;
+    width: 100%;
+    background-image: url("https://www.techvedika.com/wp-content/uploads/2023/04/businessman-pointing-his-presentation-futuristic-digital-screen_53876-102617.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 25px 0;
+}
+
+.our-services-section .section-header{
+    margin: 0 auto 30px;
+}
+
+.our-services-section .accordion{
+    --bs-accordion-active-color: var(--white);
+    --bs-accordion-active-bg: var(--orange);
+    --bs-accordion-btn-color: var(--white);
+    --bs-accordion-btn-bg: transparent;
+    --bs-accordion-bg: #00000094;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-border-radius:0;
+}
+
+.our-services-section .accordion .accordion-button{
+    border-radius: 40px;
+    border: 0;
+    border-width: 0;
+    font-family: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .our-services-section .accordion .accordion-button{
+        border-radius: 0;
+    }
+}
+
+.our-services-section .serviecpoints .offering-icons-div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-services-section .serviecpoints .offering-icons-div .offering-icons{
+    width: 50px;
+    height: 50px !important;
+    border-radius: 50% !important;
+}
+
+.our-services-section .serviecpoints .offering-div-head p{
+    color: var(--white);
+    font-size: 26px;
+}
+
+.our-services-section .serviecpoints .offering-div-description p{
+    color: var(--white);
+    font-size: 14px;
+    line-break: 26px;
+}
+
+.our-services-section .serviecpoints .readmore-btn{
+    border-color: var(--orange);
+    border-radius: 50px;
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+}
+
+.our-services-section .serviecpoints .readmore-btn:hover{
+    box-shadow: 0 0 10px var(--orange);
+}
+
+.our-services-section .serviecpoints .btn-outline-primary{
+    --bs-btn-hover-bg: var(--orange);
+    --bs-btn-active-bg: var(--orange);
+}
+
+@media screen and (max-width: 576px) {
+    .our-services-section .serviecpoints .offering-div-head p{
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    .our-services-section .serviecpoints .offering-div-description p{
+        font-size: 12px;
+    }
+
+    .our-services-section .serviecpoints .readmore-btn{
+        font-size: 10px;
+    }
+}
+
+/* Our Services Styling Ends */
+
+
+/* Customer Services Styling Starts */
+.customer-services-section{
+    background-image: url("https://www.techvedika.com/wp-content/uploads/2023/04/hands-digital-universe-background_53876-97068.png");
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+}
+
+.customer-services-section .section-service{
+    height: 530px;
+}
+
+.customer-services-section .section-service div iframe{
+    width: 420px;
+    height: 315px;
+}
+
+.customer-services-section .section-service h2{
+    line-height: 45px;
+    font-size: 32px;
+    text-align: center;
+    font-family: var(--fontFamiliy);
+}
+
+
+.customer-services-section .section-service p{
+    line-height: 23px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: var(--fontFamiliy);
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .customer-services-section .section-service div iframe{
+        width: 300px;
+        height: 215px;
+    }
+
+    .customer-services-section .section-service h2{
+        line-height: 30px;
+        font-size: 22px;
+    }
+}
+/* Customer Services Styling Ends */
