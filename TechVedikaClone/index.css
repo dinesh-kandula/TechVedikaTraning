@@ -3,12 +3,21 @@ body{
     box-sizing: border-box;
     margin: 0;
     --orange : #f46e27;
+    --light-orange: #f46e27c2;
     --white : #fff;
     --shadow-white: #ccc;
     --grey : #5e5757;
     --border-grey: #a19696;
     --black: #000;
     --fontFamiliy: 'Nunito', sans-serif!important;
+}
+
+.bg_gradiant{
+    background-image: linear-gradient(to right, #FC4A1A, #F78846, #F59C55);
+}
+
+.bg-gray {
+    background-color: #f8f8f8 !important;
 }
 /* Common Styling Ends */
 
@@ -85,12 +94,12 @@ body{
     }
 }
 
-@media screen and (min-width: 991px) {
+/* @media screen and (min-width: 991px) {
     .top-bar .dropdown:hover > .dropdown-menu{
         display: block;
         margin-top: 0;
     }
-}
+} */
 
 .top-bar .dropdown-menu{
     --bs-dropdown-link-active-bg: var(--orange);
@@ -466,3 +475,398 @@ body{
     }
 }
 /* Customer Services Styling Ends */
+
+
+/* Get Ready Section Styling Starts */
+.get-ready-section{
+    background-image: url('https://www.techvedika.com/wp-content/uploads/2022/09/Take-the-leap-Background.jpg');
+    background-size: cover;
+}
+
+.get-ready-section .flex-item-1 button{
+    background-color: var(--white);
+    color: var(--orange);
+    border-radius: 20px;
+    border: 0;
+    font-family: var(--fontFamiliy);
+    font-weight: 600;
+}
+
+.get-ready-section .flex-item-1 h2{
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+    line-height: 42px;
+}
+
+.get-ready-section .cursor-pointer{
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    padding: 7px 130px 7px 30px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    color: #F57337;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+    .get-ready-section .flex-item-1 h2{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .get-ready-section{
+        height: 190px;
+        padding-bottom: 20px;
+    }
+
+    .get-ready-section .container-flex{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .get-ready-section{
+        height: 190px;
+        padding-bottom: 20px;
+    }
+
+    .get-ready-section .container-flex{
+        flex-direction: column;
+    }
+
+    .get-ready-section .flex-item-1 h2{
+        font-size: 22px;
+    }
+
+    .get-ready-section .cursor-pointer{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .get-ready-section{
+        height: 190px;
+        padding-bottom: 20px;
+    }
+
+    .get-ready-section .flex-item-1 button{
+        font-size: 14px;
+    }
+
+    .get-ready-section .container-flex{
+        flex-direction: column;
+    }
+
+    .get-ready-section .flex-item-1 h2{
+        font-size: 16px;
+    }
+
+    .get-ready-section .cursor-pointer{
+        font-size: 14px;
+        padding: 7px 90px 7px 30px;
+    }
+}
+
+/* Get Ready Section Styling Ends */
+
+
+/* our value proposition Styling Starts */
+.our-value-proposition{
+    background-image: url("https://www.techvedika.com/wp-content/uploads/2023/05/Value1d.jpg");
+    background-size: cover;
+    background-position: center;;
+}
+
+.our-value-proposition h2{
+    font-size: 32px;
+    font-family: var(--fontFamiliy);
+    color: var(--white);
+    line-height: 42px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.our-value-proposition .each-container{
+    padding: 20px;
+    height: auto;
+}
+
+.our-value-proposition>div>div:nth-child(2)>div>.each-container{
+    height: 300px;
+}
+
+.our-value-proposition .each-container h3{
+    font-size: 20px;
+    color: var(--black);
+    font-family: var(--fontFamiliy);
+}
+
+.our-value-proposition .each-container hr{
+    width: 80%;
+    background-color: var(--black);
+    opacity: 1;
+}
+
+.our-value-proposition .each-container ul li{
+    color: #616771;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .our-value-proposition .each-container{
+        padding: 10px;
+    }
+
+    .our-value-proposition .each-container h3{
+        font-size: 18px;
+    }
+    
+    .our-value-proposition .each-container ul{
+        padding-left: 26px;
+    }
+
+    .our-value-proposition .each-container ul li{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .our-value-proposition .each-container{
+        padding: 20px;
+    }
+
+    .our-value-proposition>div>div:nth-child(2)>div>.each-container{
+        height: 100%;
+    }
+
+    .our-value-proposition .each-container h3{
+        font-size: 18px;
+    }
+    
+    .our-value-proposition .each-container ul{
+        padding-left: 26px;
+    }
+
+    .our-value-proposition .each-container ul li{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .our-value-proposition>div>div:nth-child(2)>div>.each-container{
+        height: 100%;
+    }
+}
+/* our value proposition Styling Ends */
+
+
+/* Home Testimonials Styling Starts */
+.home-testimonials h2{
+    text-align: center;
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+    font-size: 32ppx;
+}
+
+.home-testimonials .carousel-inner .carousel-item .testimonial-content p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--white);
+}
+
+.home-testimonials .carousel-inner .carousel-item .testimonial-inner .testimonial-field{
+    width: 75%;
+    text-align: center;
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+    font-size: 15px;
+
+}
+
+.home-testimonials .carousel-inner .carousel-item .testimonial-inner .testimonial-name{
+    border-top: 2px solid var(--white);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.home-testimonials .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .home-testimonials h2{
+        font-size: 28px;
+    }
+
+    .home-testimonials .carousel-inner .carousel-item .testimonial-content p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .home-testimonials h2{
+        font-size: 26px;
+    }
+
+    .home-testimonials .carousel-inner .carousel-item .testimonial-content p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home-testimonials h2{
+        font-size: 24px;
+    }
+
+    .home-testimonials .carousel-inner .carousel-item .testimonial-content p{
+        font-size: 14px;
+    }
+
+    .home-testimonials .carousel-inner .carousel-item .testimonial-inner .testimonial-field{
+        width: 90%;
+    }
+}
+/* Home Testimonials Styling Ends */
+
+/* Recognition Section Styling Starts */
+.recognition-section{
+
+}
+
+.recognition-section .each-item{
+    border-right: 1px solid var(--border-grey);
+    border-radius: 0;
+    height: 200px;
+}
+
+.recognition-section .each-item img{
+    width: 80px;
+}
+
+.recognition-section .each-item p{
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: var(--fontFamiliy);
+    font-weight: 300;
+}
+
+@media screen and (max-width: 576px) {
+    .recognition-section .each-item p{
+        font-size: 14px;
+    }
+}
+/* Recognition Section Styling Starts */
+
+/* Our Patner Styling Starts */
+.our-patners-section .each-item img{
+    width: 80%;
+}
+
+.our-patners-section .section-header h2{
+    font-family: var(--fontFamiliy);
+    color: var(--black);
+    font-size: 32px;
+}
+
+@media screen and (max-width: 768px){
+    .our-patners-section .section-header h2{
+        font-size: 22px;
+    }
+}
+/* Our Patner Styling Ends */
+
+
+/* Our Customer Stories Styling Starts */
+.our-customer-stories .section-header h2{
+    font-family: var(--fontFamiliy);
+    color: var(--black);
+    font-size: 32px;
+}
+
+@media screen and (max-width: 768px){
+    .our-customer-stories .section-header h2{
+        font-size: 22px;
+    }
+}
+
+.our-customer-stories .each-item img{
+    width: 75%;
+}
+
+@media screen and (max-width: 786px){
+    .our-customer-stories .each-item img{
+        width: 100%;
+    }
+}
+.our-customer-stories .each-item p{
+    font-family: var(--fontFamiliy);
+    color: var(--black);
+    text-align: center;
+}
+
+.our-customer-stories .view-all{
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    border-radius: 50px;
+    font-family: var(--fontFamiliy);
+}
+
+.our-customer-stories .view-all:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    box-shadow: 0 0 10px var(--orange);
+}
+
+@media screen and (max-width: 576px){
+    .our-customer-stories .view-all{
+        font-size: 14px;
+    }
+}
+
+/* Our Customer Stories Styling Ends */
+
+
+/* Meet our Team Styling Starts */
+.meet-our-team{
+    background-image: url('https://www.techvedika.com/wp-content/uploads/2023/05/Our_team.jpg');
+    background-size: 100%;
+}
+
+.meet-our-team .meetOurTeam1{
+    background-color: var(--light-orange);
+    padding: 20px;
+}
+
+.meet-our-team h3{
+    color: var(--white);
+    font-family: var(--fontFamiliy);
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .meet-our-team h3{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .meet-our-team .meetOurTeam2{
+        display: none;
+    }
+
+    .meet-our-team .meetOurTeam1{
+        padding: 10px;
+    }
+}
+
+/* Meety Our Team Styling Ends */
