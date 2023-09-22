@@ -736,10 +736,6 @@ body{
 /* Home Testimonials Styling Ends */
 
 /* Recognition Section Styling Starts */
-.recognition-section{
-
-}
-
 .recognition-section .each-item{
     border-right: 1px solid var(--border-grey);
     border-radius: 0;
