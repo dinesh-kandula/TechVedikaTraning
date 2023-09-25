@@ -16,8 +16,23 @@ body{
     background-image: linear-gradient(to right, #FC4A1A, #F78846, #F59C55);
 }
 
-.bg-gray {
+.bg-grey {
     background-color: #f8f8f8 !important;
+}
+
+.bg-dark{
+    background-color: var(--black) !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section-header h2{
+    font-family: var(--fontFamiliy);
+    color: var(--black);
+    font-size: 32px;
+    font-weight: 250;
 }
 /* Common Styling Ends */
 
@@ -735,6 +750,7 @@ body{
 }
 /* Home Testimonials Styling Ends */
 
+
 /* Recognition Section Styling Starts */
 .recognition-section .each-item{
     border-right: 1px solid var(--border-grey);
@@ -835,18 +851,29 @@ body{
 .meet-our-team{
     background-image: url('https://www.techvedika.com/wp-content/uploads/2023/05/Our_team.jpg');
     background-size: 100%;
+    background-position: center;
 }
 
 .meet-our-team .meetOurTeam1{
     background-color: var(--light-orange);
     padding: 20px;
+    height: 250px;
+}
+
+
+.meet-our-team .meetOurTeam2{
+    height: 125px;
+}
+
+.meet-our-team .meetOurTeam3{
+    height: 125px;
 }
 
 .meet-our-team h3{
     color: var(--white);
     font-family: var(--fontFamiliy);
     font-size: 28px;
-    line-height: 36px;
+    line-height: 32px;
     text-align: center;
 }
 
@@ -857,12 +884,68 @@ body{
     }
 
     .meet-our-team .meetOurTeam2{
-        display: none;
+        display: none !important;
     }
 
     .meet-our-team .meetOurTeam1{
         padding: 10px;
+        height: 120px;
     }
 }
 
+@media screen and (max-width: 576px) {
+    .meet-our-team .meetOurTeam1{
+        height: 80px;
+    }
+}
 /* Meety Our Team Styling Ends */
+
+
+/* Footer Section Styling Starts */
+
+footer .footer-container{
+    background-image:url("https://techvedika.com/wp-content/uploads/2021/02/techVPattern.png");
+    background-size: cover;
+}
+
+footer .footer-container h6{
+    color: var(--white);
+    font-size: 16px;
+    font-family: var(--fontFamiliy);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+footer .footer-container hr{
+    height: 2px;
+    background-color: var(--orange);
+    border: 0;
+    opacity: 1;
+    width: 35%;
+    margin-top: 5px;
+}
+.footer-container .menu-items-ul .menu-item:hover{
+    padding-left: 20px
+}
+
+.footer-container .menu-items-ul .menu-item a{
+    color: var(--shadow-white);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px){
+    .footer-container .menu-items-ul .menu-item a{
+        font-size: 14px;
+    }
+}
+
+footer .footer-container .each-footer .nav .nav-item  a{
+    padding: 0;
+}
+footer .footer-container .each-footer .nav .nav-item img {
+    max-width: 100%;
+    width: 25px;
+    height: auto;
+}
+
+/* Footer Section Styling Ends */
