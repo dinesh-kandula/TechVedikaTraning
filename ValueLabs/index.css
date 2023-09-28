@@ -20,6 +20,7 @@ body{
 /* Background Color Classes */
 .bg-primary-light{background-color: var(--primary-color-light);}
 .bg-primary-dark{background-color: var(--primary-color-dark);}
+.bg-grey{background-color: #F8F7F7;}
 
 /* Font Styles */
 .roboto-font{
@@ -62,6 +63,30 @@ body{
   transform-origin: bottom left;
 }
 
+.hover-fill-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--white);
+}
+
+.hover-fill-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(46, 182, 174, 0.2);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.hover-fill-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 a{
   text-decoration: none;
 }
@@ -77,6 +102,14 @@ hr{
 
 /* Header Section Styling Starts */
 .navbar{
+/* 
+  @media screen and (min-width: 991px) {
+    .dropdown:hover > .dropdown-menu{
+        display: block;
+        margin-top: 1%;
+    }
+  } */
+
   .navbar-brand .doing-right{
     font-size: 10px;
   }
@@ -85,7 +118,12 @@ hr{
     padding-top: 0;
     padding-bottom: 0;
     font-size: 16px;
+  }
 
+  @media all and (min-width: 992px) and (max-width: 1200px){
+    .navbar-collapse .nav-item .nav-link{
+      font-size: 14px;
+    }      
   }
 
   .navbar-collapse .nav-item .hover-underline-animation {
@@ -102,62 +140,184 @@ hr{
       overflow-y: scroll;
     }
   }
-
-  @media all and (min-width: 992px) {
-    .has-megamenu{
-      position:static!important;
-    }
-    
-    .megamenu{
-      left:0; right:0;
-      width:100%; margin-top:0;
-      background-color: transparent;
-      border: 0;
-    }
-
-    .megamenu .container .main-row{
-      background-color: #F8F7F7;
-      border-radius: 4px;
-      box-shadow: 0 0 8px #888888;
-    }
-
-    .megamenu .container .main-row a h2{
-      font-size: 32px;
-      font-weight: 600;
-    }
-   
-    .megamenu h6.title {
-      color: var(--black);
-      font-size: 16px;
-    }
-
-    .megamenu .sub-row .list-unstyled{
-      padding-left: 40px;
-    }
-
-    .megamenu .sub-row .list-unstyled li a{
-      color: var(--black);
-      font-weight: 350;
-    }
-
-    .solutions-nav img.sol-logo{
-      width: 165px;
-      margin-bottom: 6px;
-    }
-
-    .megamenu .container .main-row .ul-column-3 a{
-      font-size: 16px;
-      color: var(--black);
-    }
-
-    .megamenu .sub-row .col-lg-5 .hover-underline-animation{
-      color: var(--black);
-    }
-
+  
+  .has-megamenu{
+    position:static!important;
+  }
+  
+  .megamenu{
+    left:0; right:0;
+    width:100%; margin-top:0;
+    background-color: transparent;
+    border: 0;
   }
 
+  .megamenu .container .main-row{
+    background-color: #F8F7F7;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #888888;
+  }
 
+  .megamenu .container .main-row a h2{
+    font-size: 32px;
+    font-weight: 600;
+  }
  
+  .megamenu h6.title {
+    color: var(--black);
+    font-size: 16px;
+  }
+  .megamenu .container .main-row a h2 span{
+    font-size: 18px;
+  }
+
+  @media all and (max-width: 991px){
+    .megamenu .container .main-row a h2{
+      font-size: 22px;
+    }
+
+    .megamenu .container .main-row a h2 span{
+      font-size: 12px;
+    }
+  }
+
+  @media all and (min-width: 992px){
+    .megamenu-h2-break{
+      display: none;
+    }
+  }
+
+  .megamenu .sub-row .list-unstyled{
+    padding-left: 40px;
+  }
+
+  .megamenu .sub-row .list-unstyled li a{
+    color: var(--black);
+    font-weight: 350;
+  }
+
+  .solutions-nav img.sol-logo{
+    width: 165px;
+    margin-bottom: 6px;
+  }
+
+  .megamenu .container .main-row .ul-column-3 a{
+    font-size: 16px;
+    color: var(--black);
+  }
+  .megamenu .sub-row .col-lg-5 .hover-underline-animation{
+    color: var(--black);
+  }
+
+  .navbar-collapse .contact-us-btn{
+    font-size: 16px;
+  }
+
+  .navbar-collapse .contact-us-btn:hover{
+    background-color: var(--primary-color-dark);
+    color: var(--white) !important;
+  }
+
+  @media all and (min-width: 992px) and (max-width: 1200px){
+    .navbar-collapse .contact-us-btn{
+      font-size: 14px;
+    } 
+  }
+  .navbar-collapse .search-btn{
+    border: 0;
+    background-color: transparent;
+  }
+  
   /* ============ desktop view .end// ============ */
 }
 /* Header Section Styling Ends */
+
+/* Home Slider Styling Starts */
+.home-slider{
+
+  .home-banner{
+    height: 100%;
+    min-height: 60vh;
+    max-height: 70vh;
+  }
+
+  @media all and (max-width: 576px){
+    .home-banner{
+      min-height: 80vh;
+    }
+  }
+
+  .home-banner video{
+    width: auto;
+  }
+
+  .home-banner .img-fluid{
+    max-width: 50%;
+  }
+
+  @media all and (max-width: 768px){
+    .home-banner .img-fluid{
+      max-width: 80%;
+    }
+  }
+
+  .home-banner .aide-banner-logo div p{
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .home-banner .aide-banner-logo div p a{
+    color: var(--black);
+  }
+
+  @media all and (min-width: 992px){
+    .home-banner .aide-banner-logo div p{
+      width: 30%;
+    }
+  }
+
+}
+/* Home Slider Styling Ends */
+
+/* Stack Section Styling Starts */
+.stack-section{
+  .line-kepal{
+    width: 3px;
+    background-color: var(--primary-color-light);
+    height: 100%;
+  }
+
+  .year-25{
+    font-size: 38px;
+    font-weight: 300;
+    color: var(--grey);
+    margin-left: 10px;
+  }
+
+  .stack-text-link-wrapper .stack-text{
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .stack-text-link-wrapper .hoverarow .hover-underline-animation{
+    color: var(--primary-color-light);
+  }
+
+  @media all and (max-width: 768px){
+    .year-25{
+      font-size: 28px;
+    }
+    .stack-text-link-wrapper .stack-text{
+      font-size: 16px;
+    }
+  }
+}
+/* Stack Section Styling Ends */
+
+/* Client Number Section Styling Starts */
+.client-number-section{
+
+}
+/* Client Number Section Styling Ends */
