@@ -10,7 +10,7 @@ body{
 }
 
 /* Color Classes for Text */
-.c-primary-light{color: var(--primary-color-light);}
+.c-primary-light{color: var(--primary-color-light) !important;}
 .c-primary-dark{color: var(--primary-color-dark);}
 .c-black{color: var(--black);}
 .c-grey{color: var(--grey);}
@@ -33,6 +33,10 @@ body{
 
 .hover-black:hover{
   color: var(--black) !important;
+}
+
+.hover-bg-white:hover{
+  background-color: var(--white) !important;
 }
 
 .hover-underline-animation {
@@ -88,7 +92,8 @@ body{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
+  cursor: pointer !important;
 }
 
 hr{
@@ -232,6 +237,8 @@ hr{
 }
 /* Header Section Styling Ends */
 
+
+
 /* Home Slider Styling Starts */
 .home-slider{
 
@@ -281,6 +288,8 @@ hr{
 }
 /* Home Slider Styling Ends */
 
+
+
 /* Stack Section Styling Starts */
 .stack-section{
   .line-kepal{
@@ -316,8 +325,115 @@ hr{
 }
 /* Stack Section Styling Ends */
 
-/* Client Number Section Styling Starts */
-.client-number-section{
 
-}
+
+/* Client Number Section Styling Starts */
 /* Client Number Section Styling Ends */
+
+
+
+/* Fly Wheel Section Styling Starts */
+.fly-wheel-section{
+  .img-fluid{
+    cursor: pointer;
+    transition: transform 2s;
+    transition-timing-function: linear;
+    border-radius: 80%;
+  }
+  .img-fluid:hover{
+    transform: rotate(360deg);
+  }
+
+  .small-line-left{
+    color: var(--black);
+  }
+
+  .display-6{
+    color: var(--black);
+  }
+  .hoverarow a{
+    color: var(--primary-color-light);
+  }
+}
+/* Fly Wheel Section Styling Ends */
+
+
+
+/* Our Work Section Styling Ends*/
+.our-work-section{
+  .hover-container{
+    cursor: pointer;
+  }
+
+  .hover-image-container{
+    height: 300px;
+    border-radius: 10px;
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/06/technology-innovation-and-problem-solvings.jpeg');
+    background-size: cover;
+    background-position: top;
+    transition: transform 0.5s;
+  }
+
+  .hover-container:hover .hover-image-container{
+    transform: scale(1.1);
+  }
+
+  .hover-fill-animation{
+    color: var(--white);
+  }
+
+  .hover-primary-color{
+    color: var(--white);
+  }
+
+  .warapper-img-1{
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/03/legacy-modernization-enterprise-it-asset-disposition-thumbnail.jpg');
+    height: 220px;
+  }
+
+  .warapper-img-2{
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/03/m7-Header-Card.jpg');
+    height: 220px;
+  }
+
+  .warapper-img-3{
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/03/software-quality-engineering-testing-for-aviation-industry-thumbnail.jpg');
+    height: 220px;
+  }
+
+  .children {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    transition: all 2s;
+    cursor: pointer;
+  }
+
+  .wrapper-container:hover .children:before, .wrapper-container:focus .children:before {
+    display: block;
+  }
+
+  .wrapper-container:hover .children, .wrapper-container:focus .children {
+    display: block;
+  }
+
+  .children:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+  }
+
+  .children p.hover-fill-animation{
+    color: gray;
+  }
+
+  .children button.hover-fill-animation:after{
+    background-color: transparent;
+  }
+}
+/* Our Work Section Styling Ends */
