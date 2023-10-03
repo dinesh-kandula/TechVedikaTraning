@@ -35,8 +35,16 @@ body{
   color: var(--black) !important;
 }
 
+.hover-white:hover{
+  color: var(--white) !important;
+}
+
 .hover-bg-white:hover{
   background-color: var(--white) !important;
+}
+
+.hover-bg-black:hover{
+  background-color: var(--black) !important;
 }
 
 .hover-underline-animation {
@@ -359,7 +367,7 @@ hr{
 
 
 
-/* Our Work Section Styling Ends*/
+/* Our Work Section Styling Starts */
 .our-work-section{
   .hover-container{
     cursor: pointer;
@@ -435,5 +443,161 @@ hr{
   .children button.hover-fill-animation:after{
     background-color: transparent;
   }
+
+  .view-all-card .view-all-btn{
+    background-color: var(--primary-color-light);
+    color: var(--black);
+  }
 }
 /* Our Work Section Styling Ends */
+
+
+
+/* Services Solutions Styling Starts */
+.services-solutions{
+  .heading::after{
+      content: "";
+      background: #2EB6AE;
+      width: 64px;
+      display: block;
+      height: 4px;
+      margin: 10px auto;
+  }
+  
+  .text-center p.para{
+    color: var(--black);
+  }
+
+  .hover-container{
+    cursor: pointer;
+    height: 400px;
+  }
+
+  .hover-image-container{
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s;
+    height: 400px;
+  }
+
+  @media all and (max-width: 768px){
+    .hover-container{
+      height: 300px;
+    }
+
+    .hover-image-container{
+      height: 300px;
+    }
+  }
+
+  .hover-container:hover .hover-image-container{
+    transform: scale(1.1);
+  }
+
+  .hover-fill-animation{
+    color: var(--white);
+  }
+
+  .hover-primary-color{
+    color: var(--white);
+  }
+
+  .warapper-img-1{
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/05/product-development.jpg');
+  }
+
+  .warapper-img-2{
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/06/Experience-1.jpg');
+  }
+
+  .warapper-img-3{
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/06/Enterprise-applications-1.jpg');
+  }
+
+  .warapper-img-4{
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/06/data-analytics-2.jpg');
+  }
+
+  .warapper-img-5{
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/06/enterprise-support-1.jpg');
+  }
+
+  .warapper-img-6{
+    background-image: url('https://d1k5qim9574h9e.cloudfront.net/wp-content/uploads/2023/06/nextgen-tech-1.jpg');
+  }
+
+  .children {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    transition: all 2s;
+    cursor: pointer;
+  }
+
+  .wrapper-container:hover .children:before, .wrapper-container:focus .children:before {
+    display: block;
+  }
+
+  .wrapper-container:hover .children, .wrapper-container:focus .children {
+    display: block;
+  }
+
+  .children:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+  }
+
+  .children p.hover-fill-animation{
+    color: gray;
+  }
+
+  .children button.hover-fill-animation:after{
+    background-color: transparent;
+  }
+
+  .children ul li a.hover-underline-animation{
+    color: var(--primary-color-light);
+    font-size: 18px;
+  }
+
+  .children ul li a.hover-underline-animation:hover{
+    color: var(--white) !important;
+  }
+  
+  .children ul li a.hover-underline-animation:hover{
+    color: var(--white) !important;
+  }
+  
+  .view-all-card .view-all-btn{
+    background-color: var(--primary-color-light);
+    color: var(--black);
+  }
+
+}
+/* Services Solutions Styling Ends */
+
+
+/* Industries Section Starts */
+.industries-section{
+  .heading::after{
+    content: "";
+    background: #2EB6AE;
+    width: 64px;
+    display: block;
+    height: 4px;
+    margin: 10px auto;
+  }
+
+  .text-center p.para{
+    color: var(--black);
+  }
+
+}
+/* Industries Section Ends */
