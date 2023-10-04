@@ -21,6 +21,7 @@ body{
 .bg-primary-light{background-color: var(--primary-color-light);}
 .bg-primary-dark{background-color: var(--primary-color-dark);}
 .bg-grey{background-color: #F8F7F7;}
+.bg-white{background-color: var(--white);}
 
 /* Font Styles */
 .roboto-font{
@@ -109,8 +110,24 @@ hr{
   opacity: 0.5;
 }
 
-/* Common Styling Ends */
+.rounded{
+  border-radius: 10px;
+}
 
+.rounded-circle{
+  border-radius: 50%;
+}
+
+.sm-bg{
+  background-color: #7B7B7B;
+}
+
+.view-all-card .view-all-btn{
+  background-color: var(--primary-color-light);
+  color: var(--black);
+}
+
+/* Common Styling Ends */
 
 
 /* Header Section Styling Starts */
@@ -246,7 +263,6 @@ hr{
 /* Header Section Styling Ends */
 
 
-
 /* Home Slider Styling Starts */
 .home-slider{
 
@@ -297,7 +313,6 @@ hr{
 /* Home Slider Styling Ends */
 
 
-
 /* Stack Section Styling Starts */
 .stack-section{
   .line-kepal{
@@ -334,12 +349,6 @@ hr{
 /* Stack Section Styling Ends */
 
 
-
-/* Client Number Section Styling Starts */
-/* Client Number Section Styling Ends */
-
-
-
 /* Fly Wheel Section Styling Starts */
 .fly-wheel-section{
   .img-fluid{
@@ -364,7 +373,6 @@ hr{
   }
 }
 /* Fly Wheel Section Styling Ends */
-
 
 
 /* Our Work Section Styling Starts */
@@ -599,5 +607,98 @@ hr{
     color: var(--black);
   }
 
+  .industry-box div.col-12{
+    height: 250px;
+    .heading{
+      font-size: 20px;
+    }
+  }
+
+  @media all and (max-width: 576px){
+    .industry-box div.col-12{
+      height: 180px;
+      .heading{
+        font-size: 18px;
+      }
+    }
+  }
+
+  .view-all-card .view-all-btn{
+    background-color: var(--primary-color-light);
+    color: var(--black);
+  }
+
 }
 /* Industries Section Ends */
+
+
+/* Form Section Styling Starts */
+.form-section{
+  height: 300%;
+
+  .contact-section.mt-up{
+    margin-top: -180px;
+  }
+
+  @media all and (max-width: 576px){
+    .contact-section.mt-up{
+      margin-top: -80px;
+    }
+  }
+
+  .image-container .image{
+    width: 100%;
+  }
+
+  .form{
+    .label{
+      font-size: 14px;
+    }
+
+    .input{
+      border: 1px solid #CCCCCC;
+      border-radius: 4px;
+      outline: none;
+      background-color: var(--white);
+      color: var(--black);
+      padding: 8px 15px;
+      width: 100%;
+      min-height: 45px;
+    }
+  }
+
+  .contact-step{
+    padding-bottom: 20px;
+  }
+  .contact-step div.col-2{
+    background-color: #6C6C6C;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-step div p{
+    margin: 0;    
+  }
+}
+/* Form Section Styling Ends */
+
+
+/* Footer Section Styling Starts */
+.footer{
+  .f-sm-links a img{
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hr-color{
+    background-color: var(--white);
+    height: 2px;
+  }
+}
+/* Footer Section Styling Ends */
